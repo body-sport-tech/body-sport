@@ -1,6 +1,6 @@
 let botao = document.querySelector('.toggle');
 let menuLateral = document.querySelector('.menu-lateral');
-let topo = document.querySelector('.topo');
+let topo = document.querySelector('body');
 let background = document.querySelector('.background');
 
 botao.addEventListener('click', () => {

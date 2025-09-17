@@ -9,6 +9,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8FBF8;
     transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+body.ativo {
+    margin-left: 300px;
+    background-color: transparent;
+    transition: all 0.5s ease;
 }
 .menu-lateral {
     position: fixed;
@@ -45,7 +51,7 @@ body {
 }
 .toggle {
     background-color: var(--primary-color);
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 20px;
     z-index: 6;
@@ -78,35 +84,22 @@ body {
     opacity: 1;
     visibility: visible;
 }
-
-section.banner {
-  position: relative;
-}
-
-section.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-section.banner h1 {
-  position: absolute;
-  bottom: 200px;  
-  left: 100px;     
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  font-size: 3.5rem;
- 
-}
-
-section.banner {
-    background: url(../imagem/image\ 101.png);
+.topo {
+    padding: 30vw 50vw 4vw 5vw;
     background-size: cover;
-     background-position: center; 
-  align-items: center;      
-  justify-content: center;  
-  
+    background-position: top;
+    width: auto;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    opacity: 90%;
+    background: 
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
+    url('../imagem/image\ 100.png') center;
+}
+
+.topo h1 {
+    font-size: 5rem;
+    color: #ecf1ee;
 }
 
 section.meio p {
@@ -184,6 +177,9 @@ section.img div  {
 }
 section.img div img {
     width: 20%;
+    padding: 0;
+    margin: 0;
+    
 }
 .alimentacao h2 {
     text-align: center;
@@ -198,20 +194,57 @@ section.img div img {
 .alimentacao ul {
     text-align: center;
     margin: 3vw 26vw;
-    padding: 20px;
+    padding: 3vw;
     border-radius: 15px;
     background-color: #D3E6D3;
+    list-style-type: disc;
     
 }
 .alimentacao ul li p span {
     color: #02210C;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .alimentacao ul li p {
     font-size: 1.1rem;
     text-align: left;
     line-height: 1.5;
-    text-decoration: dashed;
+
 }
+.sobre {
+    margin: 4vw 8vw;
+}
+.sobre h2 {
+    font-size: 2rem;
+    color: #02210C;
+    text-align: center;
+    margin: 2vw 20vw;
+}
+.sobre ul.fundo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.sobre ul.fundo li {
+  background-color: #C1D9C3;
+  border-radius: 12px;
+  padding: 2vw;
+  max-width: 350px;
+  box-shadow: 1.5vw 1.5vw 0 #8EAB8E;
+}
+
+.sobre ul.fundo li video {
+  width: 100%;
+  height: 100%;  
+  border-radius: 8px;
+  display: block;
+}
+
 footer {
     background-color: #D3E6D3;
     padding: 4vw;
@@ -255,4 +288,3 @@ footer div.contato {
     font-size: 0.8rem;
     line-height: 22px;
 }
-

@@ -9,6 +9,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8FBF8;
     transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+body.ativo {
+    margin-left: 300px;
+    background-color: transparent;
+    transition: all 0.5s ease;
 }
 .menu-lateral {
     position: fixed;
@@ -45,7 +51,7 @@ body {
 }
 .toggle {
     background-color: var(--primary-color);
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 20px;
     z-index: 6;
@@ -78,33 +84,23 @@ body {
     opacity: 1;
     visibility: visible;
 }
-section.banner {
-  position: relative;
-}
-
-section.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-section.banner h1 {
-  position: absolute;
-  bottom: 200px;  
-  left: 100px;     
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  font-size: 3.5rem;
- 
-}
-section.banner {
-    background: url(../imagem/image\ 14.png);
+.topo {
+    padding: 30vw 50vw 4vw 5vw;
     background-size: cover;
-     background-position: center; 
-  align-items: center;      
-  justify-content: center;  
-  
+    background-position: top;
+    width: auto;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    opacity: 90%;
+    background: 
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
+    url('../imagem/image\ 14.png') center;
+}
+
+.topo h1 {
+    font-size: 7rem;
+    color: #ecf1ee;
+    text-align: center;
 }
 
 section.meio p {
@@ -188,72 +184,53 @@ section.treinos div ul li {
     border-left: 10px solid #ABD0B5;
     
 }
+section.img div  {
+    text-align: right;
+}
+section.img div img {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    
+}
 .alimentacao h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     color: #02210C;
     background: #C1D9C3;
-    margin: 3vw 30vw 10vw ;
+    margin: 3vw 30vw 1vw ;
     border-radius: 10px;
     padding: 5px 5px;
 }
-.alimentacao div ul {
-    background: #D3E6D3;
+.alimentacao ul {
     text-align: center;
-    margin: 3vw 18vw;
+    margin: 3vw 26vw;
+    padding: 3vw;
     border-radius: 15px;
+    background-color: #D3E6D3;
+    list-style-type: disc;
     
 }
-.alimentacao div ul h3 {
+.alimentacao ul li p span {
     color: #02210C;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 15px 15px;
-   
-}
-.alimentacao div ul li p {
-    font-size: 1.1rem;
-    padding: 20px 20px 30px 30px;
-}
-footer{
-    background: #D3E6D3;
-    padding: 20px 20px 20px 20px ;
-}
-
-
-footer nav ul li {
-    text-align: right;
-}
-footer nav ul li span {
-    font-weight: bold;
-}
-footer h2 {
-    font-weight: bold;
     font-size: 1.2rem;
-    padding: 8px 8px 8px 8px;
-}
-footer div.texto  p {
-    padding: 8px;    
-}
-footer div.contato p {
-  text-align: center;
-  
-}
-footer nav p span{
-    padding: 4px;
-    font-size: 1.5rem;
-}
-footer div.contato p span {
     font-weight: bold;
 }
+.alimentacao ul li p {
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 1.5;
 
-.video h3 {
-    text-align: center;
-    font-size: 1.8rem;
+}
+.sobre {
+    margin: 4vw 8vw;
+}
+.sobre h2 {
+    font-size: 2rem;
     color: #02210C;
-    padding: 10px 10px ;
-    margin: 3vw 8vw 0vw 8vw;   /* 1° cima 2° esquerda 3°baixo 4° direita */
+    text-align: center;
+    margin: 2vw 20vw;
 }
 .sobre ul.fundo {
   list-style: none;
@@ -265,7 +242,7 @@ footer div.contato p span {
   justify-content: center;
 }
 
-.sobre ul.fundo  {
+.sobre ul.fundo li {
   background-color: #C1D9C3;
   border-radius: 12px;
   padding: 2vw;
@@ -278,6 +255,48 @@ footer div.contato p span {
   height: 100%;  
   border-radius: 8px;
   display: block;
-  
 }
 
+footer {
+    background-color: #D3E6D3;
+    padding: 4vw;
+}
+footer div.conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+footer div.conteiner div.redes h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+footer div.conteiner div.redes p {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.conteiner div.redes nav p {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li a {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
