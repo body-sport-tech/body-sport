@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #6ea76e;
+    --secondary-color: #265e26ce;
+    --text-color: #a3a3a3;
+    --text-secondary-color: #001100;
+    --background-color: #013612;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8FBF8;
+    transition: background-color 0.5s ease;
+}
+
+.menu-lateral {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.menu-lateral ul li {
+    padding: 15px 30px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-lateral ul li:hover {
+    background-color: var(--secondary-color);
+}
+
+.toggle {
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 6;
+    border-radius: 50px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #ecf1ee;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+.toggle.ativo {
+    left: 320px;
+}
+
+section.logo img {
+    display: flex;
+
+}
