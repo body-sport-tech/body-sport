@@ -109,9 +109,7 @@ section.banner {
 section.meio p {
     text-align: center;
     margin: 2vw  15vw 2vw 15vw;
-    font-size: 1.2rem;
-    
-    
+    font-size: 1.2rem; 
 }
 section.meio h2 {
     color: #013612;
@@ -155,14 +153,15 @@ section.meio div ul li.img {
      
 }
 .nado div ul.lista h3 {
-    font-size: 1.1rem;
+
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
     color: #02210C;
 } 
 .nado div ul.lista p {
-    color: #5c5c5c;
-    font-size: 1rem;
+    color: #494949;
+    font-size: 1.2rem;
     padding: 10px 10px ;
 }
 .nado div {
@@ -188,14 +187,14 @@ section.meio div ul li.img {
      
 }
 .borboleta div ul.lista h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
     color: #02210C;
 } 
 .borboleta div ul.lista p {
-    color: #5c5c5c;
-    font-size: 1rem;
+    color: #494949;
+    font-size: 1.2rem;
     padding: 10px 10px ;
 }
 .borboleta div {
@@ -237,14 +236,14 @@ section.meio div ul li.img {
      
 }
 .peito div ul.lista h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
     color: #02210C;
 } 
 .peito div ul.lista p {
-    color: #5c5c5c;
-    font-size: 1rem;
+    color: #494949;
+    font-size: 1.2rem;
     padding: 10px 10px ;
 }
 .peito div {
@@ -279,14 +278,14 @@ section.meio div ul li.img {
      
 }
 .costas div ul.lista h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
     color: #02210C;
 } 
 .costas div ul.lista p {
-    color: #5c5c5c;
-    font-size: 1rem;
+    color: #494949;
+    font-size: 1.2rem;
     padding: 10px 10px ;
 }
 .costas div {
@@ -391,7 +390,9 @@ section.meio div ul li.img {
 
 .alimentacao div ul {
     background:#D3E6D3 ;
+    
 }    
+   
 .alimentacao h2 {
     color: #02210C;
     font-size: 2rem;
@@ -402,16 +403,21 @@ section.meio div ul li.img {
 }
 .alimentacao div ul h3 {
     color: #02210C;
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
     padding: 2vw 3vw 0vw 25vw;
-   
-    
+
 }
 .alimentacao div ul li p {
     text-align: center;
     padding: 2vw 3vw;
     color: #5c5c5c;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.alimentacao div ul {
+    margin: 8vw 20vw;
     font-size: 1rem;
     font-weight: 500;
 }
