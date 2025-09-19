@@ -59,7 +59,9 @@ body.ativo {
 
 .toggle {
     background-color: var(--primary-color);
+
     position: fixed;
+
     left: 20px;
     top: 20px;
     z-index: 6;
@@ -79,6 +81,7 @@ body.ativo {
 .toggle.ativo {
     left: 320px;
 }
+
 
 .background {
     position: fixed;
