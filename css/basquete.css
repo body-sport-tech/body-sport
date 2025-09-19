@@ -106,8 +106,8 @@ body.ativo {
     text-align: center;
     opacity: 90%;
     background:
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-    url('../imagem/image\ 96.png') center;
+        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+        url('../imagem/image\ 8.png') top;
 }
 
 .topo h1 {
@@ -178,157 +178,91 @@ body.ativo {
     padding: 20px;
     line-height: 1.5vw;
 }
-
-.exercicio {
-    margin: 4vw 8vw;
+.fundamentos {
+    margin: 3vw 14vw;
     text-align: center;
 }
-.escolher div.card ul {
-    margin: 4vw 0;
+.fundamentos h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 3vw 0;
     text-align: center;
 }
-
-.cardao {
-  list-style: none;
-  display: flex; 
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.cartoes li {
-  flex: 1;
-  background-color: #D3E6D3;
-  border-radius: 30px;
-  padding: 20px;
-  text-align: center;
-  margin: 3vw 14vw;
-}
-
-.icone {
-    width: 150px;
-    height: 150px;
-    background-color: #ABD0B5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw 4vw 15px 6vw;
-}
-
-.icone img {
-    width: 70px;
-}
-.cima {
-    display: flex;
-    align-items: center;
-}
-.cima div.text {
+.fundamentos ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: left;
 }
-.cartoes h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #02210C;
-    padding: 20px 42px;
-}
-.cima h4 {
-    font-size: 1.1rem;
-    padding: 15px 0;
-    color: rgba(0, 0, 0, 0.76);
-    font-weight: bold;
-}
-.cima p {
-    padding-right: 28px;
-    color: rgba(0, 0, 0, 0.76);
-}
-.icone-alongamento {
-    width: 150px;
-    height: 150px;
-    background-color: #ABD0B5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw 4vw 15px 6vw;
-}
-
-.icone-alongamento img {
-    width: 70px;
-}
-.fundamental img {
-    height: 40vw;
-}
-.fundamental h2 {
-    text-align: center;
-    color: #02210C;
-    font-weight: bold;
-    font-size: 2rem;
-}
-.fundamental h3 {
-    text-align: left;
-    color: #02210C;
-    font-weight: bold;
-    font-size: 1.6rem;
-    padding: 1vw 2vw;
-}
-.fundamental div {
-    display: flex;
-    justify-content: center;
-    background-color: #D3E6D3;
-    margin: 3vw 20vw;
-    border-radius: 30px;
-}
-.fundamental div ul.text {
-    padding: 3vw;
-}
-.fundamental div ul.text p {
-    padding: 5px 3vw;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.1rem;
-}
-.fundamental img.pliometria {
-    height: 43vw;
-}
-.dicas {
-    margin: 3vw 30vw;
-    text-align: center;
-}
-.dicas h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #02210C;
-}
-.dicas ul li {
+.fundamentos ul li {
     border: 14px solid #D3E6D3;
     padding: 20px;
     margin: 2vw;
     border-radius: 12px;
 }
-.dicas ul li h3 {
+
+.fundamentos ul li h3 {
     font-size: 1.4rem;
     font-weight: bold;
     color: #02210C;
-    padding: 10px;
+    padding: 16px 16px 10px;
 }
-.dicas ul li h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #02210C;
-    padding: 10px;
-    text-align: left;
+.fundamentos ul li p {
+    padding: 0 16px 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+.dicas {
+    margin: 4vw;
+}
+.dicas ul li {
+    background-color: #d9d9d925;
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    margin: 2vw;
+    border-radius: 12px;
+}
+.dicas ul li img {
+    width: 40px;
+    border-left: 6px solid #D3E6D3;
+    border-radius: 8px;
+    padding: 1vw 5px;
+
 }
 .dicas ul li p {
-    font-size: 1.1rem;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.62);
 }
-.dicas ul li p span {
+
+.dicas h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 3vw 0;
+    text-align: center;
+}
+.exercicio {
+    margin: 4vw;
+    text-align: center;
+}
+.exercicio ul li {
+    border-left: 6px solid #D3E6D3;
+    border-radius: 8px;
+    padding: 1vw 5px;
+    margin: 4vw;
+}
+.exercicio ul li h3 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #02210C;
     text-align: left;
+    padding: 10px 1vw;
+}
+.exercicio ul li p {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 5px 1vw;
 }
 .alimentacao h2 {
     text-align: center;
@@ -346,19 +280,20 @@ body.ativo {
     padding: 3vw;
     border-radius: 15px;
     background-color: #D3E6D3;
-    list-style-type: disc;
     
 }
-.alimentacao ul li p span {
-    color: #02210C;
-    font-size: 1.2rem;
+.alimentacao ul li h3 {
+    font-size: 1.4rem;
     font-weight: bold;
+    color: #02210C;
+    text-align: left;
+    padding: 15px 20px;
 }
 .alimentacao ul li p {
     font-size: 1.1rem;
     text-align: left;
     line-height: 1.5;
-
+    color: rgba(0, 0, 0, 0.78);
 }
 .sobre {
     margin: 4vw 8vw;
@@ -400,19 +335,6 @@ section.img div img {
     width: 20%;
     padding: 0;
     margin: 0;
-    
-}
-.profissional {
-    text-align: center;
-} 
-.profissional h2 {
-    font-size: 2rem;
-    color: #02210C;
-    padding: 20px;
-}
-.profissional p {
-    font-size: 1.2rem;
-    padding: 0 32vw;
 }
 footer {
     background-color: #D3E6D3;
