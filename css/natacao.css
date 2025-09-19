@@ -45,7 +45,7 @@ body {
 }
 .toggle {
     background-color: var(--primary-color);
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 20px;
     z-index: 6;
@@ -109,9 +109,7 @@ section.banner {
 section.meio p {
     text-align: center;
     margin: 2vw  15vw 2vw 15vw;
-    font-size: 1.2rem;
-   
-    
+    font-size: 1.2rem; 
 }
 section.meio h2 {
     color: #013612;
@@ -119,7 +117,6 @@ section.meio h2 {
     font-size: 2.2rem;
     font-weight: bold;
     margin: 3vw 8vw;
-   
 }
 section.meio div ul h2 {
     text-align: center;
@@ -156,6 +153,7 @@ section.meio div ul li.img {
      
 }
 .nado div ul.lista h3 {
+
     font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
@@ -166,7 +164,6 @@ section.meio div ul li.img {
     font-size: 1.2rem;
     padding: 10px 10px ;
 }
-
 .nado div {
     background: #D3E6D3;
     margin: 0vw 10vw 5vw 10vw;
@@ -174,7 +171,7 @@ section.meio div ul li.img {
 }
 .nado div ul.img li h3 {
     color: #02210C;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
 }
@@ -207,7 +204,7 @@ section.meio div ul li.img {
 }
 .borboleta div ul.img li h3 {
     color: #02210C;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
 }
@@ -256,7 +253,7 @@ section.meio div ul li.img {
 }
 .peito div ul.img li h3 {
     color: #02210C;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
 }
@@ -298,7 +295,7 @@ section.meio div ul li.img {
 }
 .costas div ul.img li h3 {
     color: #02210C;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 10px 10px;
 }
@@ -395,9 +392,10 @@ section.meio div ul li.img {
     background:#D3E6D3 ;
     
 }    
+   
 .alimentacao h2 {
     color: #02210C;
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
     padding: 5vw 2vw  ;
@@ -405,12 +403,11 @@ section.meio div ul li.img {
 }
 .alimentacao div ul h3 {
     color: #02210C;
-    font-size: 1.7rem;
-    font-weight: 600;
     text-align: center;
-    padding: 10px 0px;
-   
-    
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 2vw 3vw 0vw 25vw;
+
 }
 .alimentacao div ul li p {
     text-align: center;
@@ -421,6 +418,11 @@ section.meio div ul li.img {
 }
 .alimentacao div ul {
     margin: 8vw 20vw;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.alimentacao div ul {
+    margin: 3vw 5vw;
     border-radius: 20px;
 }
 .sobre {
