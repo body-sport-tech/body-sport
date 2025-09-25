@@ -76,6 +76,7 @@ body.ativo {
 
 .toggle:hover {
     background-color: var(--secondary-color);
+    font-style: italic;
 }
 
 .toggle.ativo {
