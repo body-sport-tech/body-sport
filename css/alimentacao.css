@@ -106,8 +106,8 @@ body.ativo {
     text-align: center;
     opacity: 90%;
     background:
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-    url('../imagem/image\ 96.png') center;
+        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 70%),
+        url('../imagem/image\ 11.png') top;
 }
 
 .topo h1 {
@@ -115,40 +115,10 @@ body.ativo {
     color: #ecf1ee;
     text-align: center;
 }
-section.banner {
-  position: relative;
-}
-
-section.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-section.banner h1 {
-  position: absolute;
-  bottom: 200px;  
-  left: 100px;     
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  font-size: 3.8rem;
- 
-}
-section.banner {
-    background: url(../imagem/bannernatacao.png);
-    background-size: cover;
-     background-position: center; 
-  align-items: center;      
-  justify-content: center;  
-  
-}
 section.meio p {
     text-align: center;
     margin: 2vw  10vw 2vw 10vw;
     font-size: 1.5rem;
-    
-   
     
 }
 section.meio h2 {
@@ -189,7 +159,7 @@ section.meio h2 {
 
 .nado div {
     background: #D3E6D3;
-    margin: 15vw 15vw 15vw 15vw;
+    margin: 4vw 15vw;
     border-radius: 15px;
     padding: 2vw 2vw 2vw 2vw ;
 }
@@ -207,7 +177,7 @@ section.meio h2 {
          font-size: 2.3rem;
          padding-left: 10vw;
          }
-/*88888888*/
+
 .dicas ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -216,7 +186,7 @@ section.meio h2 {
 .dicas ul li {
     border: 14px solid #D3E6D3;
     padding: 20px;
-    margin: 2vw;
+    margin: 2vw 8vw;
     border-radius: 12px;
 }
 
@@ -262,7 +232,7 @@ section.meio h2 {
     font-weight: 500;
 }
 .alimentacao div ul {
-    margin: 8vw 5vw 5vw 5vw  ;
+    margin: 8vw 5vw 5vw 5vw;
     border-radius: 20px;
     
     
@@ -275,13 +245,13 @@ section.meio h2 {
     color: #02210C;
     font-size: 2.3rem;
     font-weight: 600;
-    margin: 5vw;
+    margin: 5vw 5vw 3vw;
 }
 .macro p {
     text-align: center;
     color: #494949;
     font-size: 1.5rem;
-    margin: 8vw;
+    margin: 0 8vw 4vw;
 }
 .carbo div ul {
     background:#D3E6D3 ;
@@ -319,14 +289,14 @@ section.meio h2 {
     color: #02210C;
     font-size: 2.3rem;
     font-weight: 600;
-    margin: 5vw;
+    margin: 5vw 5vw 3vw;
 
 }
 .micro p {
     text-align: center;
     color: #494949;
     font-size: 1.5rem;
-    margin: 8vw;
+    margin: 0 8vw 4vw;
 }
 .vita div {
     background: #D3E6D3;

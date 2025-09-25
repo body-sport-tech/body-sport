@@ -5,6 +5,7 @@
     --text-secondary-color: #001100;
     --background-color: #013612;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8FBF8;
@@ -16,6 +17,7 @@ body.ativo {
     background-color: transparent;
     transition: all 0.5s ease;
 }
+
 .menu-lateral {
     position: fixed;
     left: -300px;
@@ -24,20 +26,24 @@ body.ativo {
     height: 100%;
     background-color: var(--background-color);
     z-index: 5;
-    box-shadow: 0 0 20px rgba( 0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
 .menu-lateral.ativo {
     left: 0;
 }
+
 .menu-lateral ul {
     list-style-type: none;
     padding: 0;
     margin-top: 60px;
 }
+
 .menu-lateral ul li {
     padding: 15px 30px;
 }
+
 .menu-lateral ul li a {
     text-decoration: none;
     color: var(--text-color);
@@ -46,9 +52,11 @@ body.ativo {
     align-items: center;
     gap: 10px;
 }
+
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
 }
+
 .toggle {
     background-color: var(--primary-color);
     position: fixed;
@@ -63,27 +71,32 @@ body.ativo {
     color: #ecf1ee;
     transition: all 0.5s ease-in-out;
 }
+
 .toggle:hover {
     background-color: var(--secondary-color);
 }
+
 .toggle.ativo {
     left: 320px;
 }
+
 .background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba( 0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     z-index: 4;
 }
+
 .background.ativo {
     opacity: 1;
     visibility: visible;
 }
+
 .topo {
     padding: 30vw 50vw 4vw 5vw;
     background-size: cover;
@@ -92,42 +105,15 @@ body.ativo {
     font-family: "Hammersmith One", sans-serif;
     text-align: center;
     opacity: 90%;
-    background: 
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
-    url('../imagem/image\ 100.png') center;
+    background:
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+    url('../imagem/bannerciclismo.png') center;
 }
 
 .topo h1 {
     font-size: 5rem;
     color: #ecf1ee;
-}
-section.banner {
-  position: relative;
-}
-
-section.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-section.banner h1 {
-  position: absolute;
-  bottom: 200px;  
-  left: 100px;     
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  font-size: 3.8rem;
- 
-}
-section.banner {
-    background: url(../imagem/bannerciclismo.png);
-    background-size: cover;
-     background-position: center; 
-  align-items: center;      
-  justify-content: center;  
-  
+    text-align: center;
 }
 section.meio p {
     text-align: center;
