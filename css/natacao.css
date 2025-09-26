@@ -396,11 +396,13 @@ section.meio div ul li.img {
     border: 10px solid #D3E6D3;
     border-radius: 8px;
     margin: 2vw 2vw;
-    padding: 2vw 3vw;}
-
+    padding: 2vw 3vw;
+}
+.alimentacao {
+    margin: 0 14vw;
+}
 .alimentacao div ul {
     background:#D3E6D3 ;
-    
 }    
    
 .alimentacao h2 {
@@ -413,15 +415,15 @@ section.meio div ul li.img {
 }
 .alimentacao div ul h3 {
     color: #02210C;
-    text-align: center;
+    text-align: left;
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 2vw 3vw 0vw 25vw;
+    padding: 2vw 3vw 0vw;
 
 }
 .alimentacao div ul li p {
-    text-align: center;
-    padding: 2vw 3vw;
+    text-align: left;
+    padding: 20px 4vw;
     color: #5c5c5c;
     font-size: 1.3rem;
     font-weight: 500;
