@@ -48,6 +48,7 @@ body.ativo {
 }
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
+    font-style: italic;
 }
 .toggle {
     background-color: var(--primary-color);
@@ -98,7 +99,7 @@ body.ativo {
 }
 
 .topo h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     color: #ecf1ee;
     text-align: center;
 }

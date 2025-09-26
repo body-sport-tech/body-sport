@@ -52,6 +52,7 @@ body.ativo .body ul li p a {
 }
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
+    font-style: italic;
 }
 .toggle {
     background-color: var(--primary-color);
