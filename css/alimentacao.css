@@ -56,7 +56,7 @@ body.ativo {
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
     font-style: italic;
-    
+
 }
 
 .toggle {
@@ -255,37 +255,6 @@ section.meio h2 {
     font-size: 1.5rem;
     margin: 0 8vw 4vw;
 }
-.carbo div ul {
-    background:#D3E6D3 ;
-    
-    
-}    
-
-.carbo div ul h3 {
-    color: #02210C;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 2vw ;
-    font-weight: 600;
-    text-align: left;
-   
-    
-}
-.carbo div ul li p {
-    text-align: center;
-    padding: 2vw 3vw;
-    color: #5c5c5c;
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-align: left;
-}
-.carbo div ul {
-    margin: 8vw 5vw 5vw 5vw  ;
-    border-radius: 20px;
-    
-    
-}
 .micro h2 {
     text-align: center;
     color: #02210C;
@@ -300,21 +269,41 @@ section.meio h2 {
     font-size: 1.5rem;
     margin: 0 8vw 4vw;
 }
-.vita div {
-    background: #D3E6D3;
-    margin: 5vw 15vw 5vw 8vw;
-    border-radius: 10px;
+.micro div {
+    padding: 4vw 14vw;
+    text-align: center;
+} 
+.recomendacao p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c2c2c;
+    padding: 10px;
+    text-align: center;
+    margin: 2vw 16vw 8vw;
 }
-.vita p span {
+.recomendacao h2 {
+    text-align: center;
     color: #02210C;
-    font-size: 1.3rem;
-    padding: 2vw;
-    font-weight: 500;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 5vw 24vw 3vw;
 }
-.vita p {
-    color: #494949;
-    font-size: 1.3rem;
-    padding: 2vw;
+.recomendacao p a {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-weight: lighter;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+.recomendacao p a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #aad1aa8f;
+    transition: background-color 0.5s ease;
+    border: none;
+    padding: 10px 15px;
 }
 footer {
     background-color: #D3E6D3;

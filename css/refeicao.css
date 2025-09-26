@@ -100,7 +100,7 @@ body.ativo {
 }
 
 .topo {
-    padding: 30vw 50vw 4vw 5vw;
+    padding: 30vw 40vw 4vw 5vw;
     background-size: cover;
     background-position: top;
     width: auto;
@@ -115,7 +115,7 @@ body.ativo {
 .topo h1 {
     font-size: 5rem;
     color: #ecf1ee;
-    text-align: center;
+    text-align: left;
 }
 .meio p {
     text-align: center;
@@ -133,4 +133,92 @@ body.ativo {
     font-weight: bold;
     margin: 3vw 8vw;
    
+}
+.dicas {
+    margin: 2vw 14vw;
+}
+.dicas ul li div.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dicas ul li div.top img {
+    width: 100px;
+    padding: 16px 16px 10px;
+}
+.dicas ul li {
+    border: 26px solid #D3E6D3;
+    padding: 20px;
+    margin: 4vw 8vw;
+    border-radius: 18px;
+}
+
+.dicas ul li h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #02210C;
+    padding: 16px 16px 10px;
+}
+.dicas ul li p {
+    padding: 0 20px 0 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+section.img div  {
+    text-align: center;
+}
+section.img div img {
+    width: 150px;
+    padding-bottom: 6vw;
+}
+.img p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c2c2c;
+    padding: 10px;
+    text-align: center;
+    margin: 2vw 16vw;
+}
+footer {
+    background-color: #D3E6D3;
+    padding: 4vw;
+}
+footer div.conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+footer div.conteiner div.redes h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+footer div.conteiner div.redes p {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.conteiner div.redes nav p {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li a {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
 }
