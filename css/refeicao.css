@@ -135,8 +135,11 @@ body.ativo {
     margin: 3vw 8vw;
    
 }
-.dicas {
-    margin: 2vw 14vw;
+
+.dicas ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
 }
 .dicas ul li div.top {
     display: flex;
