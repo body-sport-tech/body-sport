@@ -295,7 +295,7 @@ section.meio h2 {
     border: 1px solid black;
     font-weight: lighter;
     border-radius: 8px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .recomendacao p a:hover {
     cursor: pointer;
@@ -305,6 +305,41 @@ section.meio h2 {
     border: none;
     padding: 10px 15px;
 }
+.imc {
+    text-align: center;
+}
+.imc p {
+    font-size: 1.4rem;
+    color: #2c2c2c;
+    padding: 10px;
+    margin: 2vw 16vw 3vw;
+}
+.imc h2 {
+    color: #02210C;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 5vw 0 3vw;
+}
+.imc p#btn-imc{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-weight: lighter;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.imc p#btn-imc:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #aad1aada;
+    transition: background-color 0.5s ease;
+    border: none;
+    padding: 10px 15px;
+}
+
+
+
 .sobre {
     margin: 4vw 8vw;
 }
