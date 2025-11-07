@@ -109,7 +109,6 @@ body.ativo {
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
         url('../imagem/image\ 16.png') top;
 }
-
 .primeiro{
     margin: 2vw;
 }
@@ -134,16 +133,17 @@ body.ativo {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
   margin: 40px 0;
 }
+.dois{
+    text-align: center;
+    color: #5e5e5e;
+    font-size: 1.3rem;
+    padding: 3vw;
 
-
-/*outra parte
-*/
-#titulo {
-    font-weight: 500;
-    
 }
+/*outraaa parte*/
 #subtitulo {
     font-weight: 500;
+    font-size: 1.5rem;
 }
 fieldset {
     border: 0;
@@ -175,66 +175,39 @@ button:hover {
   box-shadow: 0 0 15px #6ea76e;
   color: rgb(22, 22, 22);
 }
-.campo input[type ="Text"], .campo input[type ="nome"], .campo input[type ="idade"], .campo select  {
-   border-radius: 5px ;
-   background-color: #e4e4e4;
-}
-.campo:hover input[type ="Text"], .campo:hover input[type ="nome"], .campo:hover input[type ="idade"], .campo:hover select{
- box-shadow:  0 3px 3px 0 #a3a3a3;
-transition: all 0.3s ease;
-}
 
-
-
-#idade {
-    display: inline-block;
-  transition: transform 0.3s ease;
-}
-#idade:hover{
- transform: scale(1.1) ;
-}
-#nome {
-    display: inline-block;
-  transition: transform 0.3s ease;
-}
-#nome:hover{
- transform: scale(1.1) ;
-}
-#genero {
-    display: inline-block;
-  transition: transform 0.3s ease;
-}
-#genero:hover{
- transform: scale(1.1) ;
-}
-
-#qual{
+  .grupo label {
     font-size: 1.2rem;
     font-weight: 300;
+    padding: 5px;
+    background-color: #dadada;
+    border-radius:  10px;
+    display: block;
+    transition: transform 0.4s ease;
     
-}
-.primeira{
-    font-size: 1.6rem
-}
-.campo input:focus[type ="Text"], .campo input:focus[type ="nome"], .campo input:focus[type ="idade"], .campo select{
-    outline: none;
-    border: none;
-    
-}
-.campo  option{
-   
-     background-color: #faf9f9;
-     font-size: 1.1rem;
-     font-weight: 300;
-}
-.dois{
-    text-align: center;
-    color: #5e5e5e;
-    font-size: 1.3rem;
-    padding: 3vw;
+  }
+  .grupo label:hover{
+    box-shadow:  0 3px 3px 0 #a3a3a3;
+transition: all 0.3s ease;
+background-color: #ebebeb;
+font-weight: 400;
+ transform: scale(1.0) ;
 
-}
-footer {
+
+  }
+  .grupo label:active{
+    background-color: #c5bfbf;
+    
+      }
+  input[type="checkbox"]:checked + label {
+    background-color: #94b490;
+    color: rgb(255, 255, 255);
+    
+    transform: scale(1.03);  
+  }
+
+ 
+  footer {
     background-color: #D3E6D3;
     padding: 4vw;
 }
@@ -277,3 +250,7 @@ footer div.contato {
     font-size: 0.8rem;
     line-height: 22px;
 }
+
+
+  
+  

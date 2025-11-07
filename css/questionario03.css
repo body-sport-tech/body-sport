@@ -56,7 +56,7 @@ body.ativo {
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
     font-style: italic;
-    
+
 }
 
 .toggle {
@@ -81,6 +81,7 @@ body.ativo {
 .toggle.ativo {
     left: 320px;
 }
+
 .background {
     position: fixed;
     top: 0;
@@ -97,6 +98,7 @@ body.ativo {
     opacity: 1;
     visibility: visible;
 }
+
 .topo {
     padding: 30vw 50vw 4vw 5vw;
     background-size: cover;
@@ -106,10 +108,9 @@ body.ativo {
     text-align: center;
     opacity: 90%;
     background:
-        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-        url('../imagem/image\ 16.png') top;
+        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 70%),
+        url('../imagem/image\ 11.png') top;
 }
-
 .primeiro{
     margin: 2vw;
 }
@@ -134,19 +135,12 @@ body.ativo {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
   margin: 40px 0;
 }
+.dois{
+    text-align: center;
+    color: #5e5e5e;
+    font-size: 1.3rem;
+    padding: 3vw;
 
-
-/*outra parte
-*/
-#titulo {
-    font-weight: 500;
-    
-}
-#subtitulo {
-    font-weight: 500;
-}
-fieldset {
-    border: 0;
 }
 .parte {
     justify-content: center;
@@ -175,66 +169,11 @@ button:hover {
   box-shadow: 0 0 15px #6ea76e;
   color: rgb(22, 22, 22);
 }
-.campo input[type ="Text"], .campo input[type ="nome"], .campo input[type ="idade"], .campo select  {
-   border-radius: 5px ;
-   background-color: #e4e4e4;
-}
-.campo:hover input[type ="Text"], .campo:hover input[type ="nome"], .campo:hover input[type ="idade"], .campo:hover select{
- box-shadow:  0 3px 3px 0 #a3a3a3;
-transition: all 0.3s ease;
-}
-
-
-
-#idade {
-    display: inline-block;
-  transition: transform 0.3s ease;
-}
-#idade:hover{
- transform: scale(1.1) ;
-}
-#nome {
-    display: inline-block;
-  transition: transform 0.3s ease;
-}
-#nome:hover{
- transform: scale(1.1) ;
-}
-#genero {
-    display: inline-block;
-  transition: transform 0.3s ease;
-}
-#genero:hover{
- transform: scale(1.1) ;
-}
-
-#qual{
+#subtitulo {
+    font-weight: 500;
     font-size: 1.2rem;
-    font-weight: 300;
-    
 }
-.primeira{
-    font-size: 1.6rem
-}
-.campo input:focus[type ="Text"], .campo input:focus[type ="nome"], .campo input:focus[type ="idade"], .campo select{
-    outline: none;
-    border: none;
-    
-}
-.campo  option{
-   
-     background-color: #faf9f9;
-     font-size: 1.1rem;
-     font-weight: 300;
-}
-.dois{
-    text-align: center;
-    color: #5e5e5e;
-    font-size: 1.3rem;
-    padding: 3vw;
-
-}
-footer {
+ footer {
     background-color: #D3E6D3;
     padding: 4vw;
 }
