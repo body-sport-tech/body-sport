@@ -1,197 +1,200 @@
 :root {
-    --primary-color: #6ea76e;
-    --secondary-color: #265e26ce;
-    --text-color: #a3a3a3;
-    --text-secondary-color: #001100;
-    --background-color: #013612;
+  --primary-color: #6ea76e;
+  --secondary-color: #265e26ce;
+  --text-color: #a3a3a3;
+  --text-secondary-color: #001100;
+  --background-color: #013612;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F8FBF8;
-    transition: background-color 0.5s ease;
-    transition: all 0.5s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fbf8;
+  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
 }
 body.ativo {
-    margin-left: 300px;
-    background-color: transparent;
-    transition: all 0.5s ease;
+  margin-left: 300px;
+  background-color: transparent;
+  transition: all 0.5s ease;
 }
 
 .menu-lateral {
-    position: fixed;
-    left: -300px;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-color: var(--background-color);
-    z-index: 5;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  position: fixed;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--background-color);
+  z-index: 5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .menu-lateral.ativo {
-    left: 0;
+  left: 0;
 }
 
 .menu-lateral ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 60px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 60px;
 }
 
 .menu-lateral ul li {
-    padding: 15px 30px;
+  padding: 15px 30px;
 }
 
 .menu-lateral ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu-lateral ul li:hover {
-    background-color: var(--secondary-color);
-    font-style: italic;
+  background-color: var(--secondary-color);
+  font-style: italic;
 }
 
 .toggle {
-    background-color: var(--primary-color);
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    z-index: 6;
-    border-radius: 50px;
-    font-size: 24px;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #ecf1ee;
-    transition: all 0.5s ease-in-out;
+  background-color: var(--primary-color);
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 6;
+  border-radius: 50px;
+  font-size: 24px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #ecf1ee;
+  transition: all 0.5s ease-in-out;
 }
 
 .toggle:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .toggle.ativo {
-    left: 320px;
+  left: 320px;
 }
 
 .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
 }
 
 .background.ativo {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .topo {
-    padding: 30vw 50vw 4vw 5vw;
-    background-size: cover;
-    background-position: top;
-    width: auto;
-    font-family: "Hammersmith One", sans-serif;
-    text-align: center;
-    opacity: 90%;
-    background:
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-    url('../imagem/image\ 96.png') center;
+  padding: 30vw 50vw 4vw 5vw;
+  background-size: cover;
+  background-position: top;
+  width: auto;
+  font-family: "Hammersmith One", sans-serif;
+  text-align: center;
+  opacity: 90%;
+  background: linear-gradient(
+      to bottom,
+      rgba(252, 252, 252, 1),
+      transparent 20%
+    ),
+    url("../imagem/image\ 96.png") center;
 }
 
 .topo h1 {
-    font-size: 5rem;
-    color: #ecf1ee;
-    text-align: center;
+  font-size: 5rem;
+  color: #ecf1ee;
+  text-align: center;
 }
 
 .praticar {
-    margin: 4vw 8vw;
+  margin: 4vw 8vw;
 }
 
 .praticar h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #02210C;
-    text-align: center;
-    margin-bottom: 2vw;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #02210c;
+  text-align: center;
+  margin-bottom: 2vw;
 }
 
 .praticar p.sub {
-    font-size: 1.2rem;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    margin: 0 12vw;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 12vw;
 }
 
 .card {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 5vw 4vw;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 5vw 4vw;
+  align-items: center;
 }
 
 .cards {
-    flex: 1;
-    background-color: #D3E6D3;
-    border-radius: 30px;
-    padding: 1vw;
-    text-align: center;
-    margin: 3vw 10vw;
+  flex: 1;
+  background-color: #d3e6d3;
+  border-radius: 30px;
+  padding: 1vw;
+  text-align: center;
+  margin: 3vw 10vw;
 }
 
 .icon {
-    width: 80px;
-    height: 80px;
-    background-color: #ABD0B5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw auto 15px;
+  width: 80px;
+  height: 80px;
+  background-color: #abd0b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw auto 15px;
 }
 
 .icon img {
-    width: 40px;
+  width: 40px;
 }
 
 .praticar h3 {
-    font-size: 1.4rem;
-    color: #02210C;
-    font-weight: bold;
+  font-size: 1.4rem;
+  color: #02210c;
+  font-weight: bold;
 }
 
 .praticar div.card p {
-    font-size: 1rem;
-    padding: 20px;
-    line-height: 1.5vw;
+  font-size: 1rem;
+  padding: 20px;
+  line-height: 1.5vw;
 }
 
 .exercicio {
-    margin: 4vw 8vw;
-    text-align: center;
+  margin: 4vw 8vw;
+  text-align: center;
 }
 .escolher div.card ul {
-    margin: 4vw 0;
-    text-align: center;
+  margin: 4vw 0;
+  text-align: center;
 }
 
 .cardao {
   list-style: none;
-  display: flex; 
+  display: flex;
   gap: 20px;
   padding: 0;
   margin: 0;
@@ -199,7 +202,7 @@ body.ativo {
 
 .cartoes li {
   flex: 1;
-  background-color: #D3E6D3;
+  background-color: #d3e6d3;
   border-radius: 30px;
   padding: 20px;
   text-align: center;
@@ -207,168 +210,166 @@ body.ativo {
 }
 
 .icone {
-    width: 150px;
-    height: 150px;
-    background-color: #ABD0B5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw 4vw 15px 6vw;
+  width: 150px;
+  height: 150px;
+  background-color: #abd0b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw 4vw 15px 6vw;
 }
 
 .icone img {
-    width: 70px;
+  width: 70px;
 }
 .cima {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .cima div.text {
-    text-align: left;
+  text-align: left;
 }
 .cartoes h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #02210C;
-    padding: 20px 42px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #02210c;
+  padding: 20px 42px;
 }
 .cima h4 {
-    font-size: 1.1rem;
-    padding: 15px 0;
-    color: rgba(0, 0, 0, 0.76);
-    font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 0;
+  color: rgba(0, 0, 0, 0.76);
+  font-weight: bold;
 }
 .cima p {
-    padding-right: 28px;
-    color: rgba(0, 0, 0, 0.76);
+  padding-right: 28px;
+  color: rgba(0, 0, 0, 0.76);
 }
 .icone-alongamento {
-    width: 150px;
-    height: 150px;
-    background-color: #ABD0B5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2vw 4vw 15px 6vw;
+  width: 150px;
+  height: 150px;
+  background-color: #abd0b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw 4vw 15px 6vw;
 }
 
 .icone-alongamento img {
-    width: 70px;
+  width: 70px;
 }
 .fundamental img {
-    height: 40vw;
+  height: 40vw;
 }
 .fundamental h2 {
-    text-align: center;
-    color: #02210C;
-    font-weight: bold;
-    font-size: 2rem;
+  text-align: center;
+  color: #02210c;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .fundamental h3 {
-    text-align: left;
-    color: #02210C;
-    font-weight: bold;
-    font-size: 1.6rem;
-    padding: 1vw 2vw;
+  text-align: left;
+  color: #02210c;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 1vw 2vw;
 }
 .fundamental div {
-    display: flex;
-    justify-content: center;
-    background-color: #D3E6D3;
-    margin: 3vw 20vw;
-    border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #d3e6d3;
+  margin: 3vw 20vw;
+  border-radius: 30px;
 }
 .fundamental div ul.text {
-    padding: 3vw;
+  padding: 3vw;
 }
 .fundamental div ul.text p {
-    padding: 5px 3vw;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.1rem;
+  padding: 5px 3vw;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
 }
 .fundamental img.pliometria {
-    height: 43vw;
+  height: 43vw;
 }
 .dicas {
-    margin: 3vw 30vw;
-    text-align: center;
+  margin: 3vw 30vw;
+  text-align: center;
 }
 .dicas h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #02210C;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #02210c;
 }
 .dicas ul li {
-    border: 14px solid #D3E6D3;
-    padding: 20px;
-    margin: 2vw;
-    border-radius: 12px;
+  border: 14px solid #d3e6d3;
+  padding: 20px;
+  margin: 2vw;
+  border-radius: 12px;
 }
 .dicas ul li h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #02210C;
-    padding: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #02210c;
+  padding: 10px;
 }
 .dicas ul li h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #02210C;
-    padding: 10px;
-    text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #02210c;
+  padding: 10px;
+  text-align: left;
 }
 .dicas ul li p {
-    font-size: 1.1rem;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 20px;
+  font-size: 1.1rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 5px 20px;
 }
 .dicas ul li p span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #02210C;
-    text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #02210c;
+  text-align: left;
 }
 .alimentacao h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #02210C;
-    background: #C1D9C3;
-    margin: 3vw 30vw 1vw ;
-    border-radius: 10px;
-    padding: 5px 5px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #02210c;
+  background: #c1d9c3;
+  margin: 3vw 30vw 1vw;
+  border-radius: 10px;
+  padding: 5px 5px;
 }
 .alimentacao ul {
-    text-align: center;
-    margin: 3vw 26vw;
-    padding: 3vw;
-    border-radius: 15px;
-    background-color: #D3E6D3;
-    list-style-type: disc;
-    
+  text-align: center;
+  margin: 3vw 26vw;
+  padding: 3vw;
+  border-radius: 15px;
+  background-color: #d3e6d3;
+  list-style-type: disc;
 }
 .alimentacao ul li p span {
-    color: #02210C;
-    font-size: 1.2rem;
-    font-weight: bold;
+  color: #02210c;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .alimentacao ul li p {
-    font-size: 1.1rem;
-    text-align: left;
-    line-height: 1.5;
-
+  font-size: 1.1rem;
+  text-align: left;
+  line-height: 1.5;
 }
 .sobre {
-    margin: 4vw 8vw;
+  margin: 4vw 8vw;
 }
 .sobre h2 {
-    font-size: 2rem;
-    color: #02210C;
-    text-align: center;
-    margin: 2vw 20vw;
+  font-size: 2rem;
+  color: #02210c;
+  text-align: center;
+  margin: 2vw 20vw;
 }
 .sobre ul.fundo {
   list-style: none;
@@ -381,80 +382,146 @@ body.ativo {
 }
 
 .sobre ul.fundo li {
-  background-color: #C1D9C3;
+  background-color: #c1d9c3;
   border-radius: 12px;
   padding: 2vw;
   max-width: 350px;
-  box-shadow: 1.5vw 1.5vw 0 #8EAB8E;
+  box-shadow: 1.5vw 1.5vw 0 #8eab8e;
 }
 
 .sobre ul.fundo li video {
   width: 100%;
-  height: 100%;  
+  height: 100%;
   border-radius: 8px;
   display: block;
 }
-section.img div  {
-    text-align: right;
+section.img div {
+  text-align: right;
 }
 section.img div img {
-    width: 20%;
-    padding: 0;
-    margin: 0;
-    
+  width: 20%;
+  padding: 0;
+  margin: 0;
 }
 .profissional {
-    text-align: center;
-} 
+  text-align: center;
+}
 .profissional h2 {
-    font-size: 2rem;
-    color: #02210C;
-    padding: 20px;
+  font-size: 2rem;
+  color: #02210c;
+  padding: 20px;
 }
 .profissional p {
-    font-size: 1.2rem;
-    padding: 0 32vw;
+  font-size: 1.2rem;
+  padding: 0 32vw;
 }
 footer {
-    background-color: #D3E6D3;
-    padding: 4vw;
+  background-color: #d3e6d3;
+  padding: 4vw;
 }
 footer div.conteiner {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 footer div.conteiner div.redes h4 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
 }
 footer div.conteiner div.redes p {
-    color: #4e4e4e;
-    font-size: 1rem;
+  color: #4e4e4e;
+  font-size: 1rem;
 }
 footer div.conteiner div.redes nav p {
-    color: #000;
-    font-size: 1.8rem;
-    padding: 20px 10px;
+  color: #000;
+  font-size: 1.8rem;
+  padding: 20px 10px;
 }
 footer div.conteiner div.redes nav p a {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 footer div.conteiner div.esporte nav ul li h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li a {
+  color: #4e4e4e;
+  font-size: 1rem;
+}
+footer div.contato {
+  text-align: center;
+}
+footer div.contato {
+  color: #6d6d6d;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+@media (max-width: 600px) {
+  .topo h1 {
+    font-size: 40px;
+  }
+
+  .praticar h2 {
+    font-size: 25px;
+  }
+
+  .praticar p.sub {
+    text-align: justify;
+    font-size: 17px;
+    flex-direction: column;
+    align-items: center;
+    text-indent: 20px;
+    margin: 4vw 0;
+  }
+
+  .praticar div.card div.cards div.car{
+    
+  }
+
+  footer {
+    background-color: #d3e6d3;
+    padding: 4vw;
+  }
+  footer div.conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer div.conteiner div.redes h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
+  footer div.conteiner div.redes p {
+    color: #4e4e4e;
+    font-size: 1rem;
+  }
+  footer div.conteiner div.redes nav p {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+  }
+  footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+  }
+
+  footer div.conteiner div.esporte nav ul li h4 {
     font-weight: bold;
     font-size: 1.2rem;
     padding-bottom: 15px;
-}
-footer div.conteiner div.esporte nav ul li a {
+  }
+  footer div.conteiner div.esporte nav ul li a {
     color: #4e4e4e;
     font-size: 1rem;
-}
-footer div.contato {
+  }
+  footer div.contato {
     text-align: center;
-}
-footer div.contato {
+  }
+  footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+  }
 }
