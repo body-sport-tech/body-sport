@@ -1,0 +1,286 @@
+:root {
+    --primary-color: #6ea76e;
+    --secondary-color: #265e26ce;
+    --text-color: #a3a3a3;
+    --text-secondary-color: #001100;
+    --background-color: #013612;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8FBF8;
+    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+body.ativo {
+    margin-left: 300px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.menu-lateral {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.menu-lateral ul li {
+    padding: 15px 30px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-lateral ul li:hover {
+    background-color: var(--secondary-color);
+    font-style: italic;
+}
+
+.toggle {
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 6;
+    border-radius: 50px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #ecf1ee;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+.toggle.ativo {
+    left: 320px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+}
+
+.background.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.topo {
+    padding: 30vw 50vw 4vw 5vw;
+    background-size: cover;
+    background-position: top;
+    width: auto;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    opacity: 90%;
+    background:
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+    url('../imagem/bannerciclismo.png') center;
+}
+
+.topo h1 {
+    font-size: 5rem;
+    color: #ecf1ee;
+    text-align: center;
+}
+section.meio p {
+    text-align: center;
+    margin: 2vw  10vw 2vw 10vw;
+    font-size: 1.5rem;
+   
+    
+}
+section.meio h2 {
+    color: #013612;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 3vw 8vw;
+   
+}
+section.meio div ul h2 {
+    text-align: center;
+    color: #02210C;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+section.meio div {
+    background-color: #D3E6D3;
+    border-radius: 50px;
+    margin: 10vw 15vw 10vw 15vw;
+    padding: 20px 20px 20px 20px;
+    
+}
+section.meio div ul li.img {
+    text-align: center;
+    padding: 20px 20px;
+}
+section.exercicios div ul li p  {
+    text-align: center;
+    margin: 2px 3px;
+    padding: 15px 15px;
+    background: #ebe6e6;
+    border-radius: 15px;
+    margin: 4vw 7vw 4vw 7vw;
+    font-size: 1.2rem;
+    border-left: 10px solid #ABD0B5;
+    color: #505050;
+    font-size: 1.3rem;
+    
+}
+.exercicios h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 5vw 0vw 6vw 0vw;
+    text-decoration:  8px underline solid #ABD0B5;
+
+}
+.alimentacao div ul {
+    background:#D3E6D3 ;
+    
+}    
+.alimentacao h2 {
+    color: #02210C;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 5vw 2vw  ;
+    
+}
+.alimentacao div ul h3 {
+    color: #02210C;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0px;
+   
+    
+}
+.alimentacao div ul li p {
+    text-align: center;
+    padding: 2vw 3vw;
+    color: #5c5c5c;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.alimentacao div ul {
+    margin: 8vw 20vw;
+    border-radius: 20px;
+}
+.sobre {
+    margin: 4vw 8vw;
+}
+.sobre h2 {
+    font-size: 2rem;
+    color: #02210C;
+    text-align: center;
+    margin: 2vw 20vw;
+}
+.sobre ul.fundo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.sobre ul.fundo li {
+  background-color: #C1D9C3;
+  border-radius: 12px;
+  padding: 2vw;
+  max-width: 350px;
+  box-shadow: 1.5vw 1.5vw 0 #8EAB8E;
+}
+
+.sobre ul.fundo li video {
+  width: 100%;
+  height: 100%;  
+  border-radius: 8px;
+  display: block;
+}
+.img  div {
+text-align: right;
+}
+.img div img {
+width: 250px;
+}
+footer {
+    background-color: #D3E6D3;
+    padding: 4vw;
+}
+footer div.conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+footer div.conteiner div.redes h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+footer div.conteiner div.redes p {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.conteiner div.redes nav p {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li a {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
