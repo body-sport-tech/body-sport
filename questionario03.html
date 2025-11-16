@@ -85,15 +85,31 @@
  <section class="parte">
       <div class="primeira">
         
-        <p id="subtitulo">Você possui alguma lesão ou restrição física?</p>
+        <p id="subtitulo">Você pratica esportes com que frequência?</p>
         <br>
       </div>
 
       <form action="questionario04.html">
-       
-      
-                  
-            <button type="submit">Concluído</button>
+       <fieldset class="grupo">
+          <input type="radio" id="capoeira" name="esporte" value="capoeira" required>
+          <label for="capoeira">4 a 7 vezes por semana</label>
+
+           <input type="radio" id="natacao" name="esporte" value="natacao">
+          <label for="natacao">1 a 3 dias por semana</label>
+
+           <input type="radio" id="ciclismo" name="esporte" value="ciclismo">
+          <label for="ciclismo">Nunca</label>
+        
+
+       </fieldset>
+   
+            <div class="bot">
+
+             <button type="submit">Concluído</button>
+            <button type="reset" id="limpar">
+                Limpar
+            </button>
+          
             
         
       </form>
