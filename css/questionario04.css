@@ -120,9 +120,9 @@ body.ativo {
 }
 .primeiro h1 {
     color: #8AA886;
-    font-size: 3.2rem;
+    font-size: 3.3rem;
     font-weight: 500;
-    
+    margin: 0 0 0 3vw;
     
 }
 .meio {
@@ -144,13 +144,14 @@ body.ativo {
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 20px rgba(85, 85, 85, 0.3);
-    margin: 0 35vw 0 35vw;
+    margin: 2vw 10vw 0 10vw;
     padding: 4vw;
     border-radius: 20px;
 }
 #subtitulo {
     font-weight: 500;
     font-size: 1.2rem;
+    
 }
 .coisa button{
      background: #94b490;
@@ -161,6 +162,7 @@ body.ativo {
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 2vw;
+  
 
 }
 .coisa button:hover{
@@ -168,4 +170,96 @@ body.ativo {
   transform: scale(1.05);
   box-shadow: 0 0 15px #6ea76e;
   color: rgb(22, 22, 22);
+}
+
+
+
+ footer {
+    background-color: #D3E6D3;
+    padding: 4vw;
+}
+footer div.conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+footer div.conteiner div.redes h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+footer div.conteiner div.redes p {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.conteiner div.redes nav p {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li a {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+
+
+
+.cards ul li h3{
+  color: #4e4e4e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #D3E6D3;
+  border: none  ;
+ box-shadow:0 1px 4px rgba(85, 85, 85, 0.3);
+  border-radius: 8px;
+
+}
+.cards ul li p{
+    background-color: #dadada48;
+    color: #4e4e4e;
+    font-size: 1rem; 
+    box-shadow:0 1px 4px rgba(85, 85, 85, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+}
+.cards ul {
+   grid-template-columns: 2fr 2fr;
+   display: grid;
+   grid: 5px;
+  
+}
+.cards ul li{
+    margin: 2vw;
+    
+}
+.cards.lista{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.03s ease-in-out;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+.cards ul li:hover{
+    transition: all 0.3s ease;
+     transform: scale(1.05) ;
+    
+}
+html{
+    scroll-behavior: smooth;
 }
