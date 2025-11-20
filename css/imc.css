@@ -27,6 +27,7 @@
   transform: translate(-50%, -50%) scale(1);
 }
 #calculator {
+    max-height: 620px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -89,7 +90,7 @@
     border: none;
     outline: none;
 }
-.input-field input :focus {
+.input-field input:focus {
     outline: none;
 }
 #calculate {
@@ -146,6 +147,16 @@
 .hidden {
     display: none;
 }
+
+
+/* Mantém o erro sempre colado no input */
+.erro {
+    display: block;
+    margin: 4px 0 0 4px !important;
+    color: #ff1900;
+    font-size: 0.85rem;
+}
+
 
 @media screen and (max-width: 500px){
     #container {
