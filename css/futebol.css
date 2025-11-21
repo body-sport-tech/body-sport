@@ -107,8 +107,7 @@ section.meio p {
     text-align: center;
     margin: 2vw  20vw 2vw 20vw;
     font-size: 1.1rem;
-    
-    
+
 }
 section.meio h2 {
     color: #013612;
@@ -288,4 +287,39 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+@media (max-width: 600px) {
+   .topo h1 {
+    font-size: 2rem;
+    } 
+    section.meio h2 {
+    font-size: 1.5rem;
+    }
+    section.meio p {
+    margin: 2vw 15vw;
+    }
+    section.meio div ul h3 {
+    font-size: 1.5rem;
+    }
+    section.meio div {
+    margin: 10vw 6vw 15vw 9vw;
+    padding: 0px 0px 0px 0px;
+    }
+    section.meio div ul li img {
+    width: 25%;
+    }
+    section.treinos div ul li {
+    text-align: center;
+    border-radius: 15px;
+    border-left: 10px solid #ABD0B5;
+    margin: 0;
+    }
+    section.meio div ul li p.praticar {
+    font-size: 1.1rem;
+    
+    }
+    section.exercicios div ul {
+    display: flex;
+    margin: 0vw 0vw ;
+    }
 }
