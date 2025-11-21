@@ -5,21 +5,25 @@
     --text-secondary-color: #001100;
     --background-color: #013612;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8FBF8;
     transition: background-color 0.5s ease;
     transition: all 0.5s ease;
 }
+
 body.ativo {
     margin-left: 300px;
     background-color: transparent;
     transition: all 0.5s ease;
 }
+
 body.ativo .body ul li p a {
     margin: 0;
     font-size: 0.8rem;
 }
+
 .menu-lateral {
     position: fixed;
     left: -300px;
@@ -28,20 +32,24 @@ body.ativo .body ul li p a {
     height: 100%;
     background-color: var(--background-color);
     z-index: 5;
-    box-shadow: 0 0 20px rgba( 0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
 .menu-lateral.ativo {
     left: 0;
 }
+
 .menu-lateral ul {
     list-style-type: none;
     padding: 0;
     margin-top: 60px;
 }
+
 .menu-lateral ul li {
     padding: 15px 30px;
 }
+
 .menu-lateral ul li a {
     text-decoration: none;
     color: var(--text-color);
@@ -50,10 +58,12 @@ body.ativo .body ul li p a {
     align-items: center;
     gap: 10px;
 }
+
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
     font-style: italic;
 }
+
 .toggle {
     background-color: var(--primary-color);
     position: fixed;
@@ -68,9 +78,11 @@ body.ativo .body ul li p a {
     color: #ecf1ee;
     transition: all 0.5s ease-in-out;
 }
+
 .toggle:hover {
     background-color: var(--secondary-color);
 }
+
 .toggle.ativo {
     left: 320px;
     border: none;
@@ -82,15 +94,17 @@ body.ativo .body ul li p a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba( 0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     z-index: 4;
 }
+
 .background.ativo {
     opacity: 1;
     visibility: visible;
 }
+
 .topo {
     padding: 30vw 50vw 4vw 5vw;
     background-size: cover;
@@ -99,20 +113,22 @@ body.ativo .body ul li p a {
     font-family: "Hammersmith One", sans-serif;
     text-align: center;
     opacity: 85%;
-    background: 
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
-    url('../imagem/image\ 87.png') center;
+    background:
+        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+        url('../imagem/image\ 87.png') center;
 }
 
 .topo h1 {
     font-size: 5rem;
     color: #023b19;
     text-align: center;
-    
+
 }
+
 .body {
     margin: 4vw 8vw;
 }
+
 .body h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -120,11 +136,13 @@ body.ativo .body ul li p a {
     text-align: center;
     margin-bottom: 2vw;
 }
+
 .body p {
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     text-align: center;
 }
+
 .body h3 {
     color: #02210C;
     font-family: "Roboto", sans-serif;
@@ -133,34 +151,40 @@ body.ativo .body ul li p a {
     font-size: 1.7rem;
     margin: 6vw 0 3vw 0;
 }
+
 .body ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
 }
+
 .body ul li {
     background-color: #D3E6D3;
     border-radius: 10px;
     margin: 1vw;
     padding: 1vw 0;
 }
+
 .body ul li h4 {
     padding: 20px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #02210C;
 }
+
 .body ul li p {
     font-size: 1rem;
     text-align: left;
     padding: 1vw;
 }
+
 .body ul li p a {
     border: 1px solid #000;
     padding: 10px;
     border-radius: 10px;
     margin: 0 4vw;
 }
+
 .body ul li p a:hover {
     cursor: pointer;
     color: #aad1aa;
@@ -168,9 +192,11 @@ body.ativo .body ul li p a {
     transition: background-color 0.5s ease;
     border: none;
 }
+
 .escolher {
     margin: 4vw 8vw;
 }
+
 .escolher h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -178,11 +204,13 @@ body.ativo .body ul li p a {
     text-align: center;
     margin-bottom: 2vw;
 }
+
 .escolher div.escolha p {
     font-size: 1.4rem;
     font-family: "Roboto", sans-serif;
     text-align: center;
 }
+
 .escolher div.escolha p a {
     text-align: center;
     border: 1px solid black;
@@ -191,12 +219,14 @@ body.ativo .body ul li p a {
     margin: 3vw 0 2vw;
     border-radius: 10px;
 }
+
 .escolher div.escolha p a:hover {
     border: none;
     background-color: #D3E6D3;
     color: white;
     transition: background-color 0.5s ease-out;
 }
+
 .escolher div.card ul {
     display: flex;
     margin: 4vw 0;
@@ -204,80 +234,87 @@ body.ativo .body ul li p a {
 }
 
 .cards {
-  list-style: none;
-  display: flex; 
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .cards li {
-  flex: 1;
-  background-color: #D3E6D3;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
+    flex: 1;
+    background-color: #D3E6D3;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
 }
 
 .icon {
-  width: 80px;
-  height: 80px;
-  background-color: #ABD0B5;
-  border-radius: 50%;
-  display: flex;          
-  align-items: center;    
-  justify-content: center;
-  margin: 0 auto 15px;
+    width: 80px;
+    height: 80px;
+    background-color: #ABD0B5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
 }
 
 .icon img {
-  width: 40px;
+    width: 40px;
 }
+
 .escolher ul li h3 {
     font-size: 1.4rem;
     color: #02210C;
     font-weight: bold;
 }
+
 .escolher ul li p {
     font-size: 1rem;
     padding: 20px;
 }
+
 .sobre {
     margin: 4vw 8vw;
 }
+
 .sobre h2 {
     font-size: 2rem;
     color: #02210C;
     text-align: center;
     margin: 2vw 20vw;
 }
+
 .sobre ul.fundo {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
 .sobre ul.fundo li {
-  background-color: #C1D9C3;
-  border-radius: 12px;
-  padding: 2vw;
-  max-width: 350px;
-  box-shadow: 1.5vw 1.5vw 0 #8EAB8E;
+    background-color: #C1D9C3;
+    border-radius: 12px;
+    padding: 2vw;
+    max-width: 350px;
+    box-shadow: 1.5vw 1.5vw 0 #8EAB8E;
 }
 
 .sobre ul.fundo li video {
-  width: 100%;
-  height: 100%;  
-  border-radius: 8px;
-  display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: block;
 }
+
 .info {
     margin: 4vw 8vw 0 8vw;
 }
+
 .info div {
     display: flex;
     justify-content: space-between;
@@ -293,35 +330,43 @@ body.ativo .body ul li p a {
     border-radius: 6px;
     margin: 2vw;
 }
+
 .info div ul li p {
     font-size: 1.2rem;
     padding: 0 3vw 8vw 0;
 }
+
 .info div img {
-height: 350px;
+    height: 350px;
 }
+
 footer {
     background-color: #D3E6D3;
     padding: 4vw;
 }
+
 footer div.conteiner {
     display: flex;
     justify-content: space-between;
 }
+
 footer div.conteiner div.redes h4 {
     font-weight: bold;
     font-size: 1.4rem;
     padding-bottom: 20px;
 }
+
 footer div.conteiner div.redes p {
     color: #4e4e4e;
     font-size: 1rem;
 }
+
 footer div.conteiner div.redes nav p {
     color: #000;
     font-size: 1.8rem;
     padding: 20px 10px;
 }
+
 footer div.conteiner div.redes nav p a {
     padding-right: 15px;
 }
@@ -331,13 +376,16 @@ footer div.conteiner div.esporte nav ul li h4 {
     font-size: 1.2rem;
     padding-bottom: 15px;
 }
+
 footer div.conteiner div.esporte nav ul li a {
     color: #4e4e4e;
     font-size: 1rem;
 }
+
 footer div.contato {
     text-align: center;
 }
+
 footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
@@ -351,13 +399,16 @@ footer div.contato {
     .body ul {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .escolher div.card ul {
         flex-direction: column;
     }
+
     .info div {
         flex-direction: column;
         align-items: center;
     }
+
     .info div img {
         height: auto;
         margin-top: 2vw;
@@ -372,12 +423,34 @@ footer div.contato {
         font-size: 1rem;
         margin: 4vw 0;
         text-align: justify;
-        text-indent: 20px; /* Adiciona recuo na primeira linha, tive q pesquisar */
+        text-indent: 20px;
+        /* Adiciona recuo na primeira linha, tive q pesquisar */
     }
+
     .menu-lateral {
         width: 250px;
         left: -250px;
-      
     }
-    
+
+    .body ul li img {
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+
+    .body ul li h4 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .body ul li p {
+        width: 80%;
+        font-size: 1rem;
+        text-align: center; 
+    } /* ainda precisa arrumar */
+
+    .body ul li {
+        padding: 3vw;
+    }
+
 }
