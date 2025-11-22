@@ -477,9 +477,67 @@ footer div.contato {
     margin: 4vw 0;
   }
 
-  .praticar div.card div.cards div.car{
-    
+.cards {
+    margin: 3vw 2vw;   
+    padding: 4vw;      
+    border-radius: 20px;
   }
+
+  .card {
+    margin: 0;         
+    padding: 0;
+  }
+
+  .icon {
+    margin: 2vw auto 3vw;
+  }
+
+  .praticar p.sub {
+    margin: 2vw 4vw;  
+  }
+}
+
+  .praticar div.card p {
+    line-height: 1.1;
+    text-align: justify;
+  }
+
+    .cartoes li {
+    margin: 4vw 2vw;     
+    padding: 6vw 4vw;   
+    border-radius: 25px; 
+  }
+
+  .cima {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .icone {
+    margin: 4vw auto;   
+  }
+
+  .cima .text {
+    text-align: center; 
+    padding: 0;
+  }
+
+  .cartoes h3 {
+    padding: 1px 0;
+    font-size: 1.5rem;
+  }
+
+  .icone {
+    width: 90px;  
+    height: 90px;
+    margin: 3vw auto;
+  }
+
+  .icone img {
+    width: 35px;     
+  }
+
+
 
   footer {
     background-color: #d3e6d3;
@@ -492,7 +550,7 @@ footer div.contato {
   footer div.conteiner div.redes h4 {
     font-weight: bold;
     font-size: 1.4rem;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   footer div.conteiner div.redes p {
     color: #4e4e4e;
@@ -524,4 +582,4 @@ footer div.contato {
     font-size: 0.8rem;
     line-height: 22px;
   }
-}
+
