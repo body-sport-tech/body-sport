@@ -162,16 +162,14 @@ section.treinos h2 {
 }
 section.treinos div ul li {
     text-align: center;
-    margin: 2px 3px;
     padding: 15px 15px;
-    background: #D9D9D9;
+    background: #e9e9e9;
     border-radius: 15px;
     margin: 3vw 4vw 2vw 3vw;
     font-size: 1.1rem;
     border-left: 10px solid #ABD0B5;
     
 }
-
 section.img div  {
     text-align: right;
 }
@@ -302,8 +300,9 @@ footer div.contato {
     font-size: 1.5rem;
     }
     section.meio div {
-    margin: 10vw 6vw 15vw 9vw;
-    padding: 0px 0px 0px 0px;
+    margin: 10vw 5vw 15vw 5vw;
+    
+    text-align: justify;
     }
     section.meio div ul li img {
     width: 25%;
@@ -312,14 +311,64 @@ footer div.contato {
     text-align: center;
     border-radius: 15px;
     border-left: 10px solid #ABD0B5;
-    margin: 0;
     }
-    section.meio div ul li p.praticar {
-    font-size: 1.1rem;
-    
+    section.meio div ul p.praticar {
+    margin: 2vw 0vw;
+    text-align: justify;
+    }
+    section.meio p {
+    margin: 2vw  10vw 2vw 10vw; 
+    text-align: justify;
     }
     section.exercicios div ul {
-    display: flex;
-    margin: 0vw 0vw ;
+    display: block;
+    margin: 15vw 10vw ;
     }
+    section.exercicios div ul li p {
+    margin: 3vw 5vw;
+    font-size: 1rem;
+    padding: 2vw;
+    }
+    section.treinos h2 {
+    font-size: 1.5rem;
+    text-decoration:  8px underline solid #ABD0B5;
+    padding: 30px 2px;
+    }
+    section.treinos div ul li {
+    margin: 2vw 2vw 4vw 4vw;
+    padding: 0.5px 0px;
+    border-left: 10px solid #ABD0B5;
+    }
+    section.treinos div ul li p {
+    font-size: 1rem;
+    margin: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    }
+    section.treinos div ul li p img {
+    width: 10%;
+    } 
+    section.alimentacao h2 {
+    font-size: 1.5rem;
+    margin: 6vw 20vw 2vw 20vw;
+    }
+    section.alimentacao ul {
+    text-align: center;
+    margin: 3vw 10vw;
+    padding: 6vw;
+    }
+    section.alimentacao ul li p {
+    font-size: 1.2rem;
+    }
+    section.sobre h2 {
+    font-size: 1.2rem;
+    margin: 6vw 8vw;
+    }
+    section.img div img {
+    width: 30%;
+    margin: 2vw 2vw 0v 0;
+    }
+
 }
