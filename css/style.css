@@ -174,7 +174,7 @@ body.ativo .body ul li p a {
 
 .body ul li p {
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
     padding: 1vw;
 }
 
@@ -394,7 +394,7 @@ footer div.contato {
 
 /* Responsividade - Camila */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .body ul {
         grid-template-columns: repeat(1, 1fr);
@@ -405,8 +405,9 @@ footer div.contato {
     }
 
     .info div {
-        flex-direction: column;
-        align-items: center;
+       /* flex-direction: column;
+        align-items: center;*/
+        display: block;
     }
 
     .info div img {
@@ -415,13 +416,18 @@ footer div.contato {
     }
 
     .body h2 {
+        font-size: 1.3rem;
+        margin: 10vw 0 8vw;
+    }
+
+    .body h3 {
         font-size: 1.5rem;
-        margin: 6vw 0;
+        margin: 7vw 2vw 7vw 2vw;
     }
 
     .body p {
         font-size: 1rem;
-        margin: 4vw 0;
+        margin: 0 4vw 5vw;
         text-align: justify;
         text-indent: 20px;
         /* Adiciona recuo na primeira linha, tive q pesquisar */
@@ -432,25 +438,93 @@ footer div.contato {
         left: -250px;
     }
 
+    .body ul li {
+        margin: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 15px;
+    }
+
     .body ul li img {
         width: 100%;
         border-radius: 10px;
-        
     }
 
     .body ul li h4 {
-        font-size: 1.1rem;
+        padding: 0;
+        margin: 0;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     .body ul li p {
         width: 80%;
         font-size: 1rem;
-        text-align: center; 
-    } /* ainda precisa arrumar */
+        text-align: center;
+        margin: 10px auto;
+        line-height: 1.4;
+    }
 
-    .body ul li {
-        padding: 3vw;
+    .escolher h2 {
+        font-size: 1.6rem;
+        margin: 0 2rem;
+    }
+
+    .escolher .escolha ul li p {
+        font-size: 1.2rem;
+        margin: 0 2rem;
+    }
+
+    .escolher .escolha li p a {
+        font-size: 1.3rem;
+    }
+
+    .sobre h2 {
+        margin: 3vh 0;
+        font-size: 1.47rem;
+    }
+
+    .escolher .card ul li {
+        margin: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 15px;
+    }
+
+    .escolher .card ul li h3 {
+        font-size: 1.5rem;
+    }
+
+    .sobre h2 {
+        margin: 5vw 0 7vw 0;
+    }
+
+    .sobre ul.fundo li video {
+        width: 180px;
+    }
+
+    .info div ul li h3 {
+        margin: 8vw 0;
+    }
+
+    .info div ul li p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .info div p img {
+        width: 160px;
+    
+    }
+
+    .info div p {
+        text-align: right;
     }
 
 }
