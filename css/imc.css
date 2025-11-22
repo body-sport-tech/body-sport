@@ -27,11 +27,11 @@
   transform: translate(-50%, -50%) scale(1);
 }
 #calculator {
-    max-height: 620px;
+    max-height: 570px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1.8rem;
     color: #f8fafc;
     background-color: #262626;
     border-radius: 8px;
@@ -41,13 +41,13 @@
     flex-direction: column;
 }
 #title {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     position: relative;
     margin-bottom: 25px;
 }
 
 .input-box label {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #cbd5e1;
     font-weight: 500;
 }
@@ -62,7 +62,7 @@
     background-color: #3f3f46;
     padding: 0.3rem;
     border-radius: 3px;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.4rem;
 }
 .input-field span {
     color: #cbd5e1;
@@ -105,16 +105,16 @@
 }
 #result {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     align-items: center;
     border-top: 1px solid #ffffff34;
-    padding: 0.75rem 0;
+    padding: 0.7rem 0;
 }
 #bmi {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
 
 }
 #bmi span:last-child {
@@ -123,27 +123,12 @@
 }
 
 #description {
-    width: 15.5rem;
+    width: 15rem;
     align-items: center;
     text-align: left;
+    font-size: 1rem;
 }
-#more-info {
-    border-top: 1px solid #ffffff34;
-    padding-top: 1.5rem;
-}
-#more-info a {
-    color: #16a34a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 0.875rem;
-    text-decoration: none;
-    transition: color 0.5s ease;
-}
-#more-info a:hover {
-    color: #cbd5e1;
-}
+
 .hidden {
     display: none;
 }
@@ -158,16 +143,35 @@
 }
 
 
-@media screen and (max-width: 500px){
-    #container {
-        width: 100%;
-        height: 100%;
+@media (max-width: 768px) {
+    /* Ajuste real para telas pequenas (celular) */
+    #contem {
+        width: 90vw;            
+        max-width: 90vw;        
+        padding: 1rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
     #calculator {
         width: 100%;
-        height: 100%;
-        border-radius: 0;
-        justify-content: center;
-        
+        max-width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+        overflow-y: auto;
+    }
+
+    #title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .input-box label {
+        font-size: 1rem;
+    }
+
+    .input-field input {
+        font-size: 1rem;
     }
 }
