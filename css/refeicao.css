@@ -225,3 +225,89 @@ footer div.contato {
     font-size: 0.8rem;
     line-height: 22px;
 }
+@media (max-width: 1024px) {
+    body.ativo {
+        margin-left: 260px;
+    }
+    .menu-lateral ul li a {
+        font-size: 1.2rem;
+    }
+    .menu-lateral {
+    left: -260px;
+    width: 260px;
+    height: 100%;
+}
+.menu-lateral ul {
+    margin-top: 30px;
+}
+.toggle.ativo {
+    left: 280px;
+}
+.topo h1 {
+    font-size: 3rem;
+}
+section.meio p {
+    margin: 5vw;
+    font-size: 1.3rem;
+    
+}
+section.meio h2 {
+    font-size: 1.6rem;
+    margin: 5vw;
+}
+.meio p.text {
+    margin: 5vw;
+}
+.dicas ul li div.top img {
+    display: none;
+}
+.dicas ul{
+    display: block;
+}
+.dicas ul li {
+    border: 16px solid #D3E6D3;
+}
+.sobre {
+    margin: 5vw;
+}
+.sobre h2 {
+    font-size: 1.4rem;
+    margin: 5vw;
+    font-weight: 600;
+}
+
+footer div.conteiner div.redes h4 {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.redes p {
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+footer div.conteiner div.redes nav p {
+    font-size: 1.4rem;
+    padding: 9px 5px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li{
+    color: #4e4e4e;
+    font-size: 1rem;
+    line-height: 25px;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+}
