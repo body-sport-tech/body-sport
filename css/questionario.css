@@ -179,7 +179,14 @@ button:hover {
    border-radius: 5px ;
    background-color: #e4e4e4;
 }
-.campo:hover input[type ="Text"], .campo:hover input[type ="nome"], .campo:hover input[type ="idade"], .campo:hover select{
+.campo input[type = "number"], .campo input[type ="idade"]{
+ border-radius: 5px ;
+   background-color: #e4e4e4;
+ border: none;
+ outline: none;
+
+}
+.campo:hover input[type ="Text"], .campo:hover input[type= "number"] .campo:hover input[type ="nome"], .campo:hover input[type ="idade"], .campo:hover select{
  box-shadow:  0 3px 3px 0 #a3a3a3;
 transition: all 0.3s ease;
 }

@@ -111,9 +111,6 @@ body.ativo {
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 70%),
         url('../imagem/image\ 11.png') top;
 }
-.primeiro{
-    margin: 2vw;
-}
 .primeiro div img {
     height: 30%;
     width: 20%;
@@ -123,9 +120,9 @@ body.ativo {
 }
 .primeiro h1 {
     color: #8AA886;
-    font-size: 3.2rem;
+    font-size: 3.3rem;
     font-weight: 500;
-    
+    margin: 0 0 0 3vw;
     
 }
 .meio {
@@ -135,124 +132,29 @@ body.ativo {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
   margin: 40px 0;
 }
-.dois{
-    text-align: center;
-    color: #5e5e5e;
-    font-size: 1.3rem;
-    padding: 3vw;
 
-}
 .parte {
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 20px rgba(85, 85, 85, 0.3);
-    margin: 0 35vw 0 35vw;
+    margin: 2vw 18vw 2vw 18vw;
     padding: 4vw;
     border-radius: 20px;
-}
-button {
-  background: #94b490;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 2vw;
-
-}
-.bot {
-     
-    display: flex;
-}
-
-
-button:hover {
-  background: #b6d8b0;
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #6ea76e;
-  color: rgb(22, 22, 22);
-}
-#subtitulo {
-    font-weight: 500;
-    font-size: 1.2rem;
-}
- footer {
-    background-color: #D3E6D3;
-    padding: 4vw;
-}
-footer div.conteiner {
-    display: flex;
-    justify-content: space-between;
-}
-footer div.conteiner div.redes h4 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding-bottom: 20px;
-}
-footer div.conteiner div.redes p {
-    color: #4e4e4e;
-    font-size: 1rem;
-}
-footer div.conteiner div.redes nav p {
-    color: #000;
-    font-size: 1.8rem;
-    padding: 20px 10px;
-}
-footer div.conteiner div.redes nav p a {
-    padding-right: 15px;
-}
-
-footer div.conteiner div.esporte nav ul li h4 {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 15px;
-}
-footer div.conteiner div.esporte nav ul li a {
-    color: #4e4e4e;
-    font-size: 1rem;
-}
-footer div.contato {
-    text-align: center;
-}
-footer div.contato {
-    color: #6d6d6d;
-    font-size: 0.8rem;
-    line-height: 22px;
-}
-/*parteeee*/
-.grupo input[type="radio"]{
-   display: inline-block;
-
     
 }
- .grupo label {
-    font-size: 1.2rem;
+.parte h1{
+    text-align: center;
+    font-size: 2.8rem;
     font-weight: 300;
-    padding: 5px;
-    background-color: #dadada;
-    border-radius:  10px;
-   display: block;
-  
+   
 }
-
-  .grupo label:active{
-       background-color: #c5bfbf;
-  }
-  .grupo label:hover{
-     box-shadow:  0 3px 3px 0 #a3a3a3;
-transition: all 0.3s ease;
- transform: scale(1.03) ;
- 
- 
-  }
-  .grupo :checked + label{
-     background-color: #94b490;
-    color: rgb(255, 255, 255);
-    transform: scale(1.03);  
-  }
-  
-
-
-  
+.parte h1 span{
+    font-weight: 300;
+    
+   
+}
+.parte p{
+    line-height: 3.3rem;
+    font-size: 1.3rem;
+}

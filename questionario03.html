@@ -59,6 +59,7 @@
             </ul>
         </nav>
     </header>
+    <div class="background"></div>
     <main>
      <section class="primeiro">
         <div>
@@ -91,21 +92,22 @@
 
       <form action="questionario04.html">
        <fieldset class="grupo">
-          <input type="radio" id="capoeira" name="esporte" value="capoeira" required>
-          <label for="capoeira">4 a 7 vezes por semana</label>
+          <input type="radio" id="47" name="esporte" value="capoeira" required>
+          <label for="47">4 a 7 vezes por semana</label>
 
-           <input type="radio" id="natacao" name="esporte" value="natacao">
-          <label for="natacao">1 a 3 dias por semana</label>
+           <input type="radio" id="13" name="esporte" value="natacao">
+          <label for="13">1 a 3 dias por semana</label>
 
-           <input type="radio" id="ciclismo" name="esporte" value="ciclismo">
-          <label for="ciclismo">Nunca</label>
+           <input type="radio" id="nunca" name="esporte" value="ciclismo">
+          <label for="nunca">Nunca</label>
         
 
        </fieldset>
    
             <div class="bot">
 
-             <button type="submit">Concluído</button>
+             <button type="submit" onclick="pagFinal()">
+                Concluído</button>
             <button type="reset" id="limpar">
                 Limpar
             </button>
@@ -207,4 +209,5 @@
     
 </body>
 <script src="script.js"></script>
+<script src="quest.js"></script>
 </html>

@@ -17,3 +17,7 @@ background.addEventListener('click', () => {
     background.classList.remove('ativo')
     document.body.style.backgroundColor = '#ecf0f1'
 })
+
+
+// parte da página final do questonário]
+
