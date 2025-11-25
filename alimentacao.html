@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light only">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -10,7 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/alimentacao.css">
+    <link rel="stylesheet" href="css/imc.css">
     <link rel="stylesheet" href="css/reset.css">
     <title>Alimentação</title>
 </head>
@@ -59,6 +68,7 @@
         </nav>
     </header>
     <div class="background"></div>
+    <div class="background-imc"></div> 
     <main>
         <section class="topo">
             <h1>Alimentação</h1>
@@ -89,8 +99,8 @@
                     <li>
 
                         <p>
-                            Fundamental antes, durante e <br> depois do treino. <br>
-                            Água é essencial, mas para treinos <br> longos ou intensos, bebidas isotônicas <br> podem
+                            Fundamental antes, durante e depois do treino. 
+                            Água é essencial, mas para treinos longos ou intensos, bebidas isotônicas <br> podem
                             ajudar a repor eletrólitos.
                         </p>
                     </li>
@@ -114,9 +124,9 @@
                     <li>
 
                         <p>
-                            Pode ser usada quando a dieta <br> não consegue suprir <br> todas as necessidades. <br>
-                            Exemplos: whey protein,creatina, <br> BCAAs, multivitamínicos. <br>
-                            Sempre preferir <br> orientação de nutricionista esportivo. </p>
+                            Pode ser usada quando a dieta não consegue suprir todas as necessidades.<br>
+                            Exemplos: whey protein,creatina, BCAAs, multivitamínicos.
+                            Sempre preferir orientação de nutricionista esportivo. </p>
                     </li>
 
                 </ul>
@@ -155,7 +165,7 @@
                         </p>
                         <h3>Objetivo:</h3>
                         <p>
-                            Repor glicogênio muscular <br> e iniciar a recuperação com <br> proteína.
+                            Repor glicogênio muscular <br> e iniciar a recuperação com proteína.
                         </p>
                     </li>
                 </ul>
@@ -191,6 +201,64 @@
             <p>
                 <a href="refeicao.html">Timing das Refeições</a>
             </p>
+      </section>
+      <section class="imc">
+        <h2>
+            O que é o IMC (Índice de Massa Corporal)?
+        </h2>
+        <p>
+            É uma medida que avalia a relação entre o peso e a altura de uma pessoa. Que estima a quantidade de gordura corporal, para uma avaliação pessoal de se você se encontra acima ou abaixo do peso ideal.
+        </p>
+        <p  id="btn-imc">
+          Calcule Aqui  
+        </p>
+    <div id="contem">
+        <div id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+                <div class="input-box">
+    <label for="weight">Peso em Kg</label>
+
+    <div class="input-field">
+        <i class="fa-solid fa-weight-hanging"></i>
+        <input type="number" id="weight" required>
+        <span>Kg</span>
+    </div>
+
+    <p class="erro" id="erro-weight"></p>
+</div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em centimetros
+                    </label>
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input type="number" id="height" required>
+                    <span>cm</span>
+                </div>
+                <p class="erro" id="erro-height"></p>
+                <button id="calculate">
+                    Calcular
+                </button>
+                
+            </form>
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
       </section>
         <section class="sobre">
             <h2>
