@@ -18,6 +18,8 @@ background.addEventListener('click', () => {
     document.body.style.backgroundColor = '#ecf0f1'
 })
 
+
+
 /* CALCULADORA */
 let form = document.getElementById('form');
 
@@ -103,3 +105,4 @@ backgroundImc.addEventListener("click", function () {
     modal.classList.remove("ativo");
     backgroundImc.classList.remove("ativo");
     });
+
