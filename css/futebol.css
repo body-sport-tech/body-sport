@@ -41,7 +41,9 @@ body.ativo {
 .menu-lateral ul li a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 18px;    display: flex;
+    justify-content: center;
+    align-items: center;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -287,6 +289,9 @@ footer div.contato {
     line-height: 22px;
 }
 @media (max-width: 600px) {
+    .topo {
+    background-size: cover;
+    }
    .topo h1 {
     font-size: 2rem;
     } 
