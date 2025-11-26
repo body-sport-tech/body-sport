@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+   <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/questionario.css">
+    
+</head>
+<body>
+     <header>
+        <button class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="menu-lateral">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i>Página Inicial</a>
+                </li>
+                <li>
+                    <a href="projeto.html">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="futebol.html">Futebol</a>
+                </li>
+                <li>
+                    <a href="capoeira.html">Capoeira</a>
+                </li>
+                <li>
+                    <a href="natacao.html">Natação</a>
+                </li>
+                <li>
+                    <a href="handebol.html">Handebol</a>
+                </li>
+                <li>
+                    <a href="basquete.html"> Basquete</a>
+                </li>
+                <li>
+                    <a href="volei.html">Vôlei</a>
+                </li>
+                <li>
+                    <a href="ciclismo.html">Ciclismo</a>
+                </li>
+                <li>
+                    <a href="alimentacao.html"> Alimentação</a>
+                </li>
+                <li>
+                    <a href="bibliografia.html">Referências</a>
+                </li>
+                <li>
+                    <a href="questionario.html">Questionário</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background"></div>
+    <main>
+    <section class="primeiro">
+        <div>
+<img src="imagem/logo.png" alt="">
+        </div>
+               
+         <h1>
+            Questionário
+         </h1>
+
+    </section>
+  
+    <section class="meio">
+    
+
+    </section>
+
+    <section class="dois">
+      <p>
+        Responda o questionário e aproveite o roteiro personalizado que <br>preparamos para você!
+      </p>
+    </section>
+
+
+    
+
+    <section class="parte">
+      <div class="primeira">
+        
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+      </div>
+
+      <form action="questionario02.html">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label id="qual" for="nome">
+                 Qual o seu nome?
+                 
+                </label>
+                <input type="text" name="nome" id="nome"  required>
+            </div>
+
+            <div class="campo">
+                <label  id="qual" for="idade">
+                    Qual a sua idade?
+                    
+                </label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+
+            <div class="campo">
+                <label id="qual" for="genero">
+                    Qual o seu gênero?
+                </label>
+               <select id="genero" required>
+                <option selected disabled value=""></option>Selecione
+                <option>
+                    Masculino
+                </option>
+                <option>
+                    Feminino
+                </option>
+                <option>
+                    Prefiro não informar
+                </option>
+               </select> 
+             
+            </div>
+
+            <button type="submit" onclick="pagFinal()">
+                
+                Concluído</button>
+            
+        </fieldset>
+      </form>
+    
+    </section>
+
+    <section class="dois">
+        <p>
+            Recomendamos um roteiro baseado nas informações dadas, para mais <br>informações procure um profissional especializado na área.
+        </p>
+    </section>
+    </main>
+    <footer>
+      <div class="conteiner">
+            <div class="redes">
+                <h4>
+                    Body Sport Tech
+                </h4>
+                <p>
+                    Transformando vidas através do esporte e bem-estar. <br>
+                    Sua jornada para uma vida mais saudável começa aqui.
+                </p>
+                <nav>
+                    <p>
+                        <a href="https://www.instagram.com/bodysporttech/"><span
+                                class="fa-brands fa-instagram"></span></a>
+                        <a href="https://x.com/BodySportTech"><span class="fa-brands fa-twitter"></span></a>
+                    </p>
+                </nav>
+                <p>
+                    Tecnologia e performance <br>
+                    a serviço do seu corpo.
+                </p>
+            </div>
+
+            <div class="esporte">
+                <nav>
+                    <ul>
+                        <li>
+                            <h4>
+                                Esportes
+                            </h4>
+                        </li>
+                        <li>
+                        <a href="futebol.html">Futebol</a>
+                    </li>
+                    <li>
+                        <a href="capoeira.html">Capoeira</a>
+                    </li>
+                    <li>
+                        <a href="natacao.html">Natação</a>
+                    </li>
+                    <li>
+                        <a href="handebol.html">Handebol</a>
+                    </li>
+                    <li>
+                        <a href="basquete.html"> Basquete</a>
+                    </li>
+                    <li>
+                        <a href="volei.html">Vôlei</a>
+                    </li>
+                    <li>
+                        <a href="ciclismo.html">Ciclismo</a>
+                    </li>
+                    <li>
+                        <a href="alimentacao.html"> Alimentação</a>
+                    </li>
+                    <li>
+                        <a href="bibliografia.html">Referências</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contato">
+            <p>
+                Contato:
+            </p>
+            <p>
+                bodysporttech@gmail.com
+            </p>
+            <p>
+                Body Sport Tech © 2025. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+   
+</body>
+<script src="script.js"></script>
+<script src="quest.js"></script>
+</html>

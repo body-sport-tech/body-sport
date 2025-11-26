@@ -55,13 +55,13 @@ body.ativo {
 
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
+    font-style: italic;
+
 }
 
 .toggle {
     background-color: var(--primary-color);
-
     position: fixed;
-
     left: 20px;
     top: 20px;
     z-index: 6;
@@ -76,13 +76,11 @@ body.ativo {
 
 .toggle:hover {
     background-color: var(--secondary-color);
-    font-style: italic;
 }
 
 .toggle.ativo {
     left: 320px;
 }
-
 
 .background {
     position: fixed;
@@ -102,65 +100,72 @@ body.ativo {
 }
 
 .topo {
-    padding: 2vw 4vw 4vw;
+    padding: 30vw 50vw 4vw 5vw;
+    background-size: cover;
+    background-position: top;
+    width: auto;
     font-family: "Hammersmith One", sans-serif;
-    border-bottom:6px solid #D9D9D9;
+    text-align: center;
+    opacity: 90%;
+    background:
+        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 70%),
+        url('../imagem/image\ 11.png') top;
 }
-.topo img {
-    padding: 0 25vw;
+.primeiro div img {
+    height: 30%;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+      display: block;
+    margin:  0 auto;
+    
 }
-.topo h1 {
-    font-size: 5rem;
+.primeiro h1 {
     color: #8AA886;
-    text-align: left;
+    font-size: 3.3rem;
+    font-weight: 500;
+    margin: 0 0 0 3vw;
+    
 }
-.praticar {
-    margin: 4vw 8vw;
+.meio {
+      border: none;             
+  height: 2px;               
+  background: #ccc;           
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+  margin: 40px 0;
 }
 
-.praticar h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #02210C;
+.parte {
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 2vw;
+    box-shadow: 0 4px 20px rgba(85, 85, 85, 0.3);
+    margin: 2vw 18vw 2vw 18vw;
+    padding: 4vw;
+    border-radius: 20px;
+    
 }
-
-.fontes ul li h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #02210C;
-    padding: 20px 42px 2vw;
-}
-.fontes ul li {
-    background-color: #D3E6D3;
-    border-radius: 30px;
-    padding: 2vw;
-    margin: 3vw 25vw;
-}
-.fontes ul li p {
-    color: #2C2C2C;
-    padding: 5px 20px;
-}
-.fontes ul li.display {
-    display: flex;
-}
-section.img div  {
+.parte h1{
     text-align: center;
+    font-size: 2.8rem;
+    font-weight: 300;
+   
 }
-section.img div img {
-    width: 150px;
-    padding-bottom: 6vw;
+.parte h1 span{
+    font-weight: 300;
+    
+   
 }
-.img p {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #2c2c2c;
-    padding: 10px;
-    text-align: center;
-    margin: 2vw 16vw;
+.parte p{
+    font-weight: 350;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
 }
-footer {    padding: 2vw 10vw;
+#lista-esportes{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+ footer {
     background-color: #D3E6D3;
     padding: 4vw;
 }
@@ -204,21 +209,55 @@ footer div.contato {
     line-height: 22px;
 }
 
-@media (max-width: 600px){
-    section.topo {
-    padding: 2vw 0vw 8vw 0vw;
-    }
-    section.topo h1 {
-    font-size: 2.8rem;
+
+
+@media (max-width: 700px) {
+  .parte{
+    margin: 3vw 10vw 3vw 10vw;
+  }
+  .dois{
+    font-size: 1.1rem
+  }
+ .primeiro div img{
+    width: 40%;
+   
+ }
+  .primeiro h1{
+    font-size: 2.4rem;
+  }
+footer div.conteiner div.redes h4 {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.redes p {
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+footer div.conteiner div.redes nav p {
+    font-size: 1.4rem;
+    padding: 9px 5px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li{
+    color: #4e4e4e;
+    font-size: 1rem;
+    line-height: 25px;
+}
+footer div.contato {
     text-align: center;
-    }
-    section.praticar h2 {
-    font-size: 1.8rem;
-    }
-    section.fontes ul {
-    margin: 0;
-    }    
-    section.fontes ul li{
-    margin: 2vw 6vw 4vw 6vw;
-    }
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+
 }
