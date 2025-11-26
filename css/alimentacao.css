@@ -411,6 +411,9 @@ footer div.contato {
 .toggle.ativo {
     left: 280px;
 }
+.topo {
+    background-size: cover;
+}
 .topo h1 {
     font-size: 3rem;
 }
