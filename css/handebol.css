@@ -99,6 +99,16 @@ body.ativo {
 }
 
 .topo {
+
+    background-size: cover;
+    background-position: top;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    opacity: 90%;
+    background:
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+    url('../imagem/image96.png') center;
+
   height: 30vh; 
   padding: 0;
   width: 100%;
@@ -116,6 +126,7 @@ body.ativo {
       transparent 20%
     ),
     url("../imagem/image\ 96.png");
+
 }
 
 .topo h1 {
@@ -465,7 +476,6 @@ footer div.contato {
 
 @media (max-width: 600px) {
 
-
   .topo {
     padding: 15vh 0 5vh 0; 
     background-position: center;
@@ -488,7 +498,69 @@ footer div.contato {
     margin: 4vw 0;
   }
 
+
+.cards {
+    margin: 3vw 2vw;   
+    padding: 4vw;      
+    border-radius: 20px;
+  }
+
+  .card {
+    margin: 0;         
+    padding: 0;
+  }
+
+  .icon {
+    margin: 2vw auto 3vw;
+  }
+
+  .praticar p.sub {
+    margin: 2vw 4vw;  
+  }
+}
+
+  .praticar div.card p {
+    line-height: 1.1;
+    text-align: justify;
+  }
+
+    .cartoes li {
+    margin: 4vw 2vw;     
+    padding: 6vw 4vw;   
+    border-radius: 25px; 
+  }
+
+  .cima {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .icone {
+    margin: 4vw auto;   
+  }
+
   .cima .text {
+    text-align: center; 
+    padding: 0;
+  }
+
+  .cartoes h3 {
+    padding: 1px 0;
+    font-size: 1.5rem;
+  }
+
+  .icone {
+    width: 90px;  
+    height: 90px;
+    margin: 3vw auto;
+  }
+
+  .icone img {
+    width: 35px;     
+  }
+
+ .cima .text {
+
     text-align: left; 
     padding: 0;
   }
@@ -620,7 +692,7 @@ section.img div img {
   footer div.conteiner div.redes h4 {
     font-weight: bold;
     font-size: 1.4rem;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   footer div.conteiner div.redes p {
     color: #4e4e4e;
@@ -652,4 +724,4 @@ section.img div img {
     font-size: 0.8rem;
     line-height: 22px;
   }
-}
+

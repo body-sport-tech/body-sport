@@ -108,7 +108,7 @@ body.ativo {
     opacity: 90%;
     background:
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-        url('../imagem/image\ 16.png') top;
+        url('../imagem/image16.png') top;
 }
 
 .topo h1 {
@@ -143,6 +143,7 @@ body.ativo {
     margin: 5vw 4vw;
     align-items: center;
 }
+
 
 .cards {
     flex: 1;
@@ -430,4 +431,46 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+@media (max-width: 600px){
+    .topo{
+        background-size: cover;
+    }
+
+.praticar div.card p{
+    line-height: 1.4rem;
+}
+.cartoes ul{
+    padding: 10vw;
+    margin: 3vw 3vw;
+}
+.cartoes ul li{
+    margin: 0 20px;
+}
+.alimentacao h2 {
+      font-size: 2.6rem;
+    margin: 8vw 0vw;
+     padding: 5px 5px;
+}
+.alimentacao ul li {
+margin:0 20px;
+}
+.alimentacao ul{
+    margin: 3vw 3vw;
+}
+.dicas ul{
+    display: block;
+}
+.baixo{
+    display: block;
+}
+.baixo-alongamento {
+    display: block;
+}
+.cima{
+    display: block;
+}
+.topo h1 {
+    font-size: 2rem;
+}
 }
