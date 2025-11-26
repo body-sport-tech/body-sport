@@ -100,22 +100,30 @@ body.ativo {
 }
 
 .topo {
-    padding: 30vw 50vw 4vw 5vw;
-    background-size: cover;
-    background-position: top;
-    width: auto;
-    font-family: "Hammersmith One", sans-serif;
-    text-align: center;
-    opacity: 90%;
-    background:
-        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-        url('../imagem/bannerciclismo.png') center;
+  height: 30vh; 
+  padding: 0;
+  width: 100%;
+  
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  
+  font-family: "Hammersmith One", sans-serif;
+  text-align: center;
+  opacity: 90%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(252, 252, 252, 1),
+      transparent 20%
+    ),
+    url('../imagem/bannerciclismo.png');
 }
 
 .topo h1 {
-    font-size: 5rem;
-    color: #ecf1ee;
-    text-align: center;
+  font-size: 3rem;
+  color: #ecf1ee;
+  text-align: left;
+  margin: 10px;
 }
 
 section.meio p {
@@ -314,12 +322,80 @@ footer div.contato {
 
 @media (max-width: 600px) {
 
-    .meio p {
-     text-align: justify;
-     font-size: 17px;
-     flex-direction: column;
-     align-items: center;
-     text-indent: 20px;
-     margin: 4vw 0;
-    }
+.topo {
+    padding: 15vh 0 5vh 0; 
+    background-position: center;
+  }
+  
+  .topo h1 {
+    font-size: 40px;
+  }
+  
+  .meio h2 {
+    font-size: 1.1rem;
+  }
+  section.meio p {
+    text-align: justify;
+    font-size: 1.1rem; 
+    margin:  4vw;
+    text-indent: 0; 
+  }
+
+  section.meio div {
+    margin: 8vw 5vw 8vw 5vw;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  section.meio div ul li.img {
+    padding: 10px;
+    
+  }
+
+  section.meio div ul h2 {
+    font-size: 1.4rem;
+    padding: 5px 0;
+  }
+  
+
+  section.exercicios div ul li p {
+    margin: 4vw 2vw;
+    font-size: 1.1rem; 
+  }
+
+  .exercicios h2 {
+    font-size: 2rem;
+    margin: 8vw 2vw 6vw 2vw;
+    text-decoration: 5px underline solid #ABD0B5; 
+  }
+
+ 
+  .alimentacao h2 {
+    font-size: 2rem;
+    padding: 8vw 2vw;
+  }
+  
+  .alimentacao div ul {
+    margin: 8vw 5vw; 
+  }
+
+  .sobre {
+      margin: 4vw 2vw;
+  }
+
+  .sobre h2 {
+      font-size: 1.4rem;
+      margin: 4vw 2vw;
+  }
+  
+  .sobre ul.fundo {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sobre ul.fundo li {
+      max-width: 90%;
+      padding: 4vw;
+      box-shadow: 1vw 1vw 0 #8EAB8E; 
+  }
 }
