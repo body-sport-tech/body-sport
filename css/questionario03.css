@@ -119,7 +119,8 @@ body.ativo {
     width: 20%;
     align-items: center;
     justify-content: center;
-    
+      display: block;
+    margin:  0 auto;
 }
 .primeiro h1 {
     color: #8AA886;
@@ -163,8 +164,8 @@ button {
 
 }
 .bot {
-     
-    display: flex;
+    display: block;
+    
 }
 
 
@@ -255,4 +256,57 @@ transition: all 0.3s ease;
   
 
 
+@media (max-width: 800px) {
+  .parte{
+    margin: 3vw 10vw 3vw 10vw;
+  }
+  .dois{
+    font-size: 1.1rem
+  }
+ .primeiro div img{
+    width: 40%;
+   
+ }
+  .primeiro h1{
+    font-size: 2.4rem;
+  }
+ .bot {
+    padding: 18px;
+    display: block
+ }
+footer div.conteiner div.redes h4 {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.redes p {
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+footer div.conteiner div.redes nav p {
+    font-size: 1.4rem;
+    padding: 9px 5px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li{
+    color: #4e4e4e;
+    font-size: 1rem;
+    line-height: 25px;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+}
   
