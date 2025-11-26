@@ -99,18 +99,16 @@ body.ativo {
 }
 
 .topo {
-<<<<<<< HEAD
-    padding: 30vw 50vw 4vw 5vw;
+
     background-size: cover;
     background-position: top;
-    width: auto;
     font-family: "Hammersmith One", sans-serif;
     text-align: center;
     opacity: 90%;
     background:
     linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
     url('../imagem/image96.png') center;
-=======
+
   height: 30vh; 
   padding: 0;
   width: 100%;
@@ -128,7 +126,7 @@ body.ativo {
       transparent 20%
     ),
     url("../imagem/image\ 96.png");
->>>>>>> 1018c7f3e154e45491b647fad18ef81c7b4faa23
+
 }
 
 .topo h1 {
@@ -137,7 +135,6 @@ body.ativo {
   text-align: left;
   margin: 10px;
 }
-
 .praticar {
   margin: 4vw 8vw;
 }
@@ -478,7 +475,7 @@ footer div.contato {
 }
 
 @media (max-width: 600px) {
-  
+
   .topo {
     padding: 15vh 0 5vh 0; 
     background-position: center;
@@ -500,6 +497,7 @@ footer div.contato {
     text-indent: 20px;
     margin: 4vw 0;
   }
+
 
 .cards {
     margin: 3vw 2vw;   
@@ -562,6 +560,7 @@ footer div.contato {
   }
 
  .cima .text {
+
     text-align: left; 
     padding: 0;
   }
