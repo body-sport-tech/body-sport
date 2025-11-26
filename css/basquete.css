@@ -382,7 +382,9 @@ footer div.contato {
 }
 
 @media (max-width: 600px) {
-
+    .topo {
+    background-size: cover;
+    }
     .topo h1 {
         font-size: 40px;
       }

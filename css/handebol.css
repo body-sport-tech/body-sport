@@ -125,7 +125,7 @@ body.ativo {
       rgba(252, 252, 252, 1),
       transparent 20%
     ),
-    url("../imagem/image\ 96.png");
+    url("../imagem/image96.png");
 
 }
 
@@ -565,10 +565,10 @@ footer div.contato {
     padding: 0;
   }
   
-  .exercicio .cartao div.text p {
+  .exercicio .cartao ul.cartoes li div.text p {
     padding: 2px 0 2px 5vw; 
     text-align: left; 
-    margin: 0;
+    margin: 0 25vw 0 0;
   }
 
   .dicas ul li p {
