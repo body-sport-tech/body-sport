@@ -393,7 +393,7 @@ footer div.contato {
     font-size: 0.8rem;
     line-height: 22px;
 }
-@media (max-width: 768px) { 
+@media (max-width: 840px) { 
     body.ativo {
         margin-left: 260px;
     }
