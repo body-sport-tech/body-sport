@@ -143,7 +143,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     /* Ajuste real para telas pequenas (celular) */
     #contem {
         width: 90vw;            
