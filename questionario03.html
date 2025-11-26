@@ -59,6 +59,7 @@
             </ul>
         </nav>
     </header>
+    <div class="background"></div>
     <main>
      <section class="primeiro">
         <div>
@@ -85,15 +86,32 @@
  <section class="parte">
       <div class="primeira">
         
-        <p id="subtitulo">Você possui alguma lesão ou restrição física?</p>
+        <p id="subtitulo">Você pratica esportes com que frequência?</p>
         <br>
       </div>
 
       <form action="questionario04.html">
-       
-      
-                  
-            <button type="submit">Concluído</button>
+       <fieldset class="grupo">
+          <input type="radio" id="47" name="bola" value="4 a 7 vezes por semana" required>
+          <label for="47">4 a 7 vezes por semana</label>
+
+           <input type="radio" id="13" name="bola" value="1 a 3 dias por semana">
+          <label for="13">1 a 3 dias por semana</label>
+
+           <input type="radio" id="nunca" name="bola" value="Nunca">
+          <label for="nunca">Nunca</label>
+        
+
+       </fieldset>
+   
+            <div class="bot">
+
+             <button id="enviou" onclick="pegarValores()">
+                Concluído</button>
+            <button type="reset" id="limpar">
+                Limpar
+            </button>
+          
             
         
       </form>
@@ -191,4 +209,5 @@
     
 </body>
 <script src="script.js"></script>
+<script src="quest.js" defer></script>
 </html>

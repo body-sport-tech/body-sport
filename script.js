@@ -18,6 +18,9 @@ background.addEventListener('click', () => {
     document.body.style.backgroundColor = '#ecf0f1'
 })
 
+
+
+/* CALCULADORA */
 let form = document.getElementById('form');
 
 form.addEventListener('submit', function (event) {
@@ -25,6 +28,33 @@ form.addEventListener('submit', function (event) {
 
     let weight = parseFloat(document.getElementById('weight').value);
     let height = parseFloat(document.getElementById('height').value);
+
+    let erroWeight = document.getElementById('erro-weight');
+    let erroHeight = document.getElementById('erro-height');
+
+    // limpa erros
+    erroWeight.textContent = "";
+    erroHeight.textContent = "";
+
+    let temErro = false;
+    erroWeight.style.setProperty('color', '#ff1900', 'important');
+erroHeight.style.setProperty('color', '#ff1900', 'important');
+
+    // valida peso
+    if (!weight || weight <= 0) {
+        erroWeight.textContent = "Digite um peso válido acima de zero.";
+        temErro = true;
+    }
+
+    // valida altura
+    if (!height || height <= 0) {
+        erroHeight.textContent = "Digite uma altura válida acima de zero.";
+        temErro = true;
+    }
+
+    if (temErro) {
+        return; // para o formulário se tiver erro
+    }
 
     if (height > 3) {
         height = height / 100;
@@ -35,7 +65,6 @@ form.addEventListener('submit', function (event) {
     let value = document.getElementById('value');
     let description = '';
     let color = '';
-
     document.getElementById('infos').classList.remove('hidden')
 
     if (bmi < 18.5) {
@@ -58,10 +87,12 @@ form.addEventListener('submit', function (event) {
         color = '#8e44ad';
     }
     value.textContent = bmi
-    document.getElementById('description').textContent = description
     value.style.color = color;
-    document.querySelector('description').style.color = color;
+    let descSpan = document.querySelector("#description span");
+descSpan.textContent = description;
+descSpan.style.setProperty('color', color, 'important');
 });
+
 let backgroundImc = document.querySelector('.background-imc');
 let btnImc = document.getElementById("btn-imc");
 let modal = document.getElementById("contem");
@@ -73,4 +104,5 @@ btnImc.addEventListener("click", function () {
 backgroundImc.addEventListener("click", function () {
     modal.classList.remove("ativo");
     backgroundImc.classList.remove("ativo");
-});
+    });
+
