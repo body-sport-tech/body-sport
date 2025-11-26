@@ -16,9 +16,12 @@ function pagFinal(){
   console.log("entrou")
   localStorage.setItem("nome", nome);
 //window.location = "pagina02.html";
+
 }
+
+
 //ihoihy
-let botaoEnviar = document.getElementById("botaoEnviar")
+/*let botaoEnviar = document.getElementById("botaoEnviar")
 
 function pegarValores (){
   
@@ -35,5 +38,6 @@ function pegarValores (){
 
 }
 
-botaoEnviar.addEventListener("click", pegarValores)
+botaoEnviar.addEventListener("click", pegarValores)*/
+
 
