@@ -22,7 +22,7 @@ background.addEventListener('click', () => {
 
 /* CALCULADORA */
 let form = document.getElementById('form');
-
+console.log(form)
 form.addEventListener('submit', function (event) {
     event.preventDefault()
 
