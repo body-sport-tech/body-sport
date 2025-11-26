@@ -99,23 +99,32 @@ body.ativo {
 }
 
 .topo {
-    padding: 30vw 50vw 4vw 5vw;
-    background-size: cover;
-    background-position: top;
-    width: auto;
+    height: 30vh; 
+    padding: 0;
+    width: 100%;
+    
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
     font-family: "Hammersmith One", sans-serif;
     text-align: center;
     opacity: 90%;
-    background:
-        linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 70%),
-        url('../imagem/bannernatacao.png') top;
-}
-
-.topo h1 {
-    font-size: 5rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(252, 252, 252, 1),
+        transparent 20%
+      ),
+      url("../imagem/bannernatacao.png");
+  }
+  
+  .topo h1 {
+    font-size: 3rem;
     color: #ecf1ee;
-    text-align: center;
-}
+    text-align: left;
+    margin: 10px;
+    padding: 40vw 0 2vw 2vw;
+  }
 section.meio p {
     text-align: center;
     margin: 2vw  15vw 2vw 15vw;
@@ -514,5 +523,7 @@ footer div.contato {
     line-height: 22px;
 }
 
+@media (max-width: 600px) {
 
+}
 
