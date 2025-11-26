@@ -113,15 +113,9 @@ body.ativo .body ul li p a {
     font-family: "Hammersmith One", sans-serif;
     text-align: center;
     opacity: 85%;
-<<<<<<< HEAD
-    background: 
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
-    url('../imagem/image87.png')center;
-=======
     background:
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-        url('../imagem/image\ 87.png') center;
->>>>>>> 1018c7f3e154e45491b647fad18ef81c7b4faa23
+        url('../imagem/image87.png')center;
 }
 
 .topo h1 {
@@ -161,34 +155,57 @@ body.ativo .body ul li p a {
 .body ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    gap: 20px;
 }
 
 .body ul li {
     background-color: #D3E6D3;
     border-radius: 10px;
-    margin: 1vw;
-    padding: 1vw 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.body ul li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* garante que a imagem não fique esticada/deformada, tive q pesquisar */
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .body ul li h4 {
-    padding: 20px;
+    padding: 10px 0;
     font-size: 1.2rem;
     font-weight: bold;
     color: #02210C;
+    text-align: center;
 }
 
 .body ul li p {
     font-size: 1rem;
     text-align: center;
-    padding: 1vw;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.body ul li p:last-child {
+    flex-grow: 0;
+    margin-top: auto;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .body ul li p a {
     border: 1px solid #000;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin: 0 4vw;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
 }
 
 .body ul li p a:hover {
@@ -196,7 +213,6 @@ body.ativo .body ul li p a {
     color: #aad1aa;
     background-color: rgba(255, 255, 255, 0.671);
     transition: background-color 0.5s ease;
-    border: none;
 }
 
 .escolher {
@@ -398,15 +414,16 @@ footer div.contato {
     line-height: 22px;
 }
 
-/* Responsividade - Camila */
 
+/* Responsividade - Camila */
 
 @media (max-width: 768px) {
 
     .body ul {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 0;
     }
-
     .escolher div.card ul {
         flex-direction: column;
     }
@@ -429,7 +446,7 @@ footer div.contato {
 
     .body h3 {
         font-size: 1.5rem;
-        margin: 7vw 2vw 7vw 2vw;
+        margin: 13vw 2vw 5vw 2vw;
     }
 
     .body p {
@@ -446,33 +463,51 @@ footer div.contato {
     }
 
     .body ul li {
-        margin: 5vw;
+        margin: 20px 0;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 20px 15px;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
     }
 
     .body ul li img {
         width: 100%;
         border-radius: 10px;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
     }
 
-    .body ul li h4 {
-        padding: 0;
-        margin: 0;
-        font-size: 1.2rem;
-        text-align: center;
+    .body ul li img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
     }
 
     .body ul li p {
-        width: 80%;
+        text-indent: 0;
         font-size: 1rem;
         text-align: center;
-        margin: 10px auto;
-        line-height: 1.4;
+        margin: 0;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .body ul li p:last-child {
+        margin-top: 10px;
+        width: auto;
+        flex-grow: 0;
+    }
+
+    .body ul li p a {
+        display: inline-block;
+        margin: 0;
+        padding: 10px 20px;
     }
 
     .escolher h2 {
@@ -526,35 +561,30 @@ footer div.contato {
         width: 180px;
     }
 
-    .info div ul li h3 {
-        margin: 8vw 0;
+    .info {
+        margin: 4vw 8vw 0 8vw;
     }
 
-    .info div ul li p {
-        font-size: 1.2rem;
-        text-align: justify;
+    .info div {
+        display: block;
+        position: relative;
+        padding-bottom: 140px;
     }
 
-    .info div p img {
-        width: 160px;
-
-    }
-
-    .info div p {
-        text-align: right;
-    }
-
-    .info div ul li h3 {
-        font-size: 1.2rem;
+    .info div img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 150px;
+        height: auto;
+        margin: 0;
+        z-index: 1;
     }
 
     .info div ul li p {
         font-size: 1rem;
-        margin-right: 3rem;
-    }
-
-    .info div p img {
-        width: 100px;
+        margin-right: 10px;
+        text-align: justify;
     }
 
     footer div.conteiner div.redes h4 {
