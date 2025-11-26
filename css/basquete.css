@@ -108,7 +108,7 @@ body.ativo {
     opacity: 90%;
     background:
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-        url('../imagem/image\ 8.png') top;
+        url('../imagem/image8.png') top;
 }
 
 .topo h1 {
