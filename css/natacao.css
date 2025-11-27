@@ -122,176 +122,282 @@ body.ativo {
     margin: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-
-/* --- SEÇÃO MEIO --- */
-section.meio {
-    padding: 20px;
+section.meio p {
     text-align: center;
+    margin: 2vw  15vw 2vw 15vw;
+    font-size: 1.2rem; 
 }
 
 section.meio h2 {
     color: #013612;
     font-size: 2.2rem;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 3vw 8vw;
 }
-
-section.meio p {
-    margin: 0 auto 40px;
-    max-width: 800px;
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.destaque-box {
-    background-color: var(--card-bg);
-    border-radius: 50px;
-    margin: 20px auto;
-    padding: 40px;
-    max-width: 1000px;
-}
-
-.conteudo-destaque {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.conteudo-destaque img {
-    max-width: 100%;
-    height: auto;
-}
-
-.estilo-card {
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.card-container {
-    background: var(--card-bg);
-    border-radius: 15px;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.lado-imagem {
-    flex: 1;
+section.meio div ul h2 {
     text-align: center;
-}
-
-.lado-imagem img {
-    width: 80%;
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-.lado-imagem h3 {
     color: #02210C;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 15px;
+    padding: 10px 10px;
 }
-
-.lado-texto {
-    flex: 1.5;
+section.meio div {
+    background-color: #D3E6D3;
+    border-radius: 50px;
+    margin: 10vw 10vw 15vw 10vw;
+    padding: 20px 20px 20px 20px;
+    
+}
+section.meio div ul li.img {
+    text-align: center;
+    padding: 20px 20px;
+}
+.nado div ul.img {
+   text-align: left;
+   padding-left: 15vw;
+   margin: 5vw 0vw 5vw;
+    position: absolute;
+  font-weight: bold;
+   
+   
+}
+.nado div ul {
     text-align: right;
+    padding-right: 10vw;
+    margin: 3vw 0vw;
+   
+     
+}
+.nado div ul.lista h3 {
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    color: #02210C;
+} 
+.nado div ul.lista p {
+    color: #494949;
+    font-size: 1.2rem;
+    padding: 10px 10px ;
+}
+.nado div {
+    background: #D3E6D3;
+    margin: 0vw 10vw 5vw 10vw;
+    border-radius: 15px;
+}
+.nado div ul.img li h3 {
+    color: #02210C;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.nado div ul.img li img {
+    width: 80%;
+} 
+
+.borboleta div ul {
+    text-align: right;
+    padding-right: 10vw;
+    margin: 3vw 0vw;
+   
+     
+}
+.borboleta div ul.lista h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    color: #02210C;
+} 
+.borboleta div ul.lista p {
+    color: #494949;
+    font-size: 1.2rem;
+    padding: 10px 10px ;
+}
+.borboleta div {
+    background: #D3E6D3;
+    margin: 0vw 10vw 5vw 10vw;
+    border-radius: 15px;
+}
+.borboleta div ul.img li h3 {
+    color: #02210C;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.borboleta div ul.img li img {
+    width: 80%;
+} 
+.borboleta div ul.img {
+   text-align: left;
+   padding-left: 15vw;
+   margin: 5vw 0vw 5vw;
+    position: absolute;
+  font-weight: bold;
 }
 
-.item-texto {
-    margin-bottom: 20px;
+.peito div ul.img {
+   text-align: left;
+   padding-left: 15vw;
+   margin: 5vw 0vw 5vw;
+    position: absolute;
+  font-weight: bold;
+   
+   
 }
+.peito div ul {
+    text-align: right;
+    padding-right: 10vw;
+    margin: 3vw 0vw;
+   
+     
+}
+.peito div ul.lista h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    color: #02210C;
+} 
+.peito div ul.lista p {
+    color: #494949;
+    font-size: 1.2rem;
+    padding: 10px 10px ;
+}
+.peito div {
+    background: #D3E6D3;
+    margin: 0vw 10vw 5vw 10vw;
+    border-radius: 15px;
+}
+.peito div ul.img li h3 {
+    color: #02210C;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.peito div ul.img li img {
+    width: 80%;
+} 
 
-.item-texto h3 {
+.costas div ul.img {
+   text-align: left;
+   padding-left: 15vw;
+   margin: 5vw 0vw 5vw;
+    position: absolute;
+  font-weight: bold;
+   
+   
+}
+.costas div ul {
+    text-align: right;
+    padding-right: 10vw;
+    margin: 3vw 0vw;
+   
+     
+}
+.costas div ul.lista h3 {
     font-size: 1.4rem;
     font-weight: bold;
     color: #02210C;
-    margin-bottom: 5px;
-}
-
-.item-texto p {
+} 
+.costas div ul.lista p {
     color: #494949;
     font-size: 1.2rem;
-    line-height: 1.5;
+    padding: 10px 10px ;
 }
-
-.treinamento, .fortalecimento {
-    margin: 50px auto;
-    max-width: 1200px;
-    padding: 0 20px;
+.costas div {
+    background: #D3E6D3;
+    margin: 0vw 10vw 5vw 10vw;
+    border-radius: 15px;
 }
-
-.treinamento h3, .fortalecimento h3 {
+.costas div ul.img li h3 {
+    color: #02210C;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.costas div ul.img li img {
+    width: 80%;
+} 
+.treinamento h3 {
     text-align: center;
     color: #02210C;
     font-size: 2rem;
     margin-bottom: 30px;
 }
-
-.treino-container {
-    background: var(--card-bg);
-    border-radius: 15px;
-    padding: 30px;
+.treinamento div  {
     display: flex;
-    align-items: center;
-    gap: 30px;
+}
+.treinamento div {
+    background: #D3E6D3;
+    margin: 5vw 8vw 10vw 8vw ;
+    border-radius: 15px;
+}
+.treinamento ul li h3.um {
+    font-size: 1.6rem ;
+}
+.treinamento ul li h3.dois {
+    font-size: 1.6rem;
+}
+.treinamento div ul p {
+  text-align: center;
 }
 
-.treino-container img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
 
-.lista-treino {
-    flex: 1;
+.fortalecimento h3 {
+    text-align: center;
+    color: #02210C;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 30px 0px 30px 0px;
 }
-
-.item-treino h3.subtitulo {
+.fortalecimento div  {
+    display: flex;
+}
+.fortalecimento div {
+    background: #D3E6D3;
+    margin: 5vw 8vw 10vw 8vw ;
+    border-radius: 15px;
+}
+.fortalecimento ul li h3.um {
+    font-size: 1.5rem ;
+}
+.fortalecimento ul li h3.dois {
     font-size: 1.5rem;
-    margin-top: 15px;
 }
-
-.item-treino p {
-    font-size: 1.1rem;
-    color: #494949;
-    margin-top: 5px;
+.fortalecimento ul li h3.tres {
+    font-size: 1.5rem;
 }
-
-
-.adicionais {
-    margin: 50px auto;
-    max-width: 1200px;
+.fortalecimento div ul p {
+  text-align: center;
+  padding-left: 35px;
+}
+.adicionais h2 {
     text-align: center;
 }
-
-.grid-dicas {
+.adicionais div ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+    padding: 3vw 2vw;
+    
 }
-
-.dica-card {
-    border: 5px solid var(--card-bg);
-    border-radius: 15px;
-    padding: 20px;
-    transition: transform 0.3s;
+.adicionais {
+    margin: 3vw 14vw;
+    text-align: center;
 }
-
-.dica-card:hover {
-    transform: translateY(-5px);
-    background-color: var(--card-bg);
-}
-
-.dica-card h3 {
-    color: #02210C;
+.adicionais div h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    color: #02210C;
+    font-weight: 500;
+}
+.adicionais div ul p {
+    color: #5c5c5c;
+    font-size: 1.3rem;
+}
+.adicionais div ul li {
+    border: 10px solid #D3E6D3;
+    border-radius: 8px;
+    margin: 2vw 2vw;
+    padding: 2vw 3vw;
 }
 
 .alimentacao {
@@ -299,67 +405,81 @@ section.meio p {
     max-width: 1000px;
     text-align: center;
 }
-
-.alimentacao-container {
-    background: var(--card-bg);
-    border-radius: 20px;
-    padding: 40px;
-    margin: 20px;
+.alimentacao div ul {
+    background:#D3E6D3 ;
+}    
+   
+.alimentacao h2 {
+    color: #02210C;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 5vw 2vw  ;
+    
 }
-
-.alim-item {
-    margin-bottom: 30px;
-    text-align: left;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding-bottom: 20px;
-}
-
-.alim-item:last-child {
-    border: none;
-}
-
-.alim-item h3 {
+.alimentacao div ul h3 {
     color: #02210C;
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 2vw 3vw 0vw;
+
+}
+.alimentacao div ul li p {
+    text-align: left;
+    padding: 20px 4vw;
+    color: #5c5c5c;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.alimentacao div ul {
+    margin: 8vw 20vw;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.alimentacao div ul {
+    margin: 3vw 5vw;
+    border-radius: 20px;
 }
 
 .sobre {
+    margin: 4vw 8vw;
+}
+.sobre h2 {
+    font-size: 2rem;
+    color: #02210C;
     text-align: center;
     margin: 50px 20px;
 }
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.sobre ul.fundo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
-.video-container img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 10px 10px 0 #8EAB8E;
-    transition: transform 0.3s;
+.sobre ul.fundo li {
+  background-color: #C1D9C3;
+  border-radius: 12px;
+  padding: 2vw;
+  max-width: 350px;
+  box-shadow: 1.5vw 1.5vw 0 #8EAB8E;
 }
 
-.video-container img:hover {
-    transform: scale(1.02);
-}
-
-.img-final {
-    text-align: right;
-    padding: 20px;
-}
-.img-final img {
-    width: 200px;
+.sobre ul.fundo li video {
+  width: 100%;
+  height: 100%;  
+  border-radius: 8px;
+  display: block;
 }
 
 footer {
     background-color: #D3E6D3;
     padding: 50px 20px;
 }
-
-.conteiner {
+footer div.conteiner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -367,17 +487,22 @@ footer {
     margin: 0 auto;
     gap: 40px;
 }
-
-.redes h4, .esporte h4 {
+footer div.conteiner div.redes h4 {
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
-
-.redes a {
-    font-size: 1.8rem;
-    margin-right: 15px;
+footer div.conteiner div.redes p {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+footer div.conteiner div.redes nav p {
     color: #000;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
 }
 
 .esporte ul {
@@ -388,46 +513,17 @@ footer {
 .esporte li {
     margin-bottom: 8px;
 }
-
-.esporte a {
-    text-decoration: none;
+footer div.conteiner div.esporte nav ul li a {
     color: #4e4e4e;
 }
-
-.contato-footer {
+footer div.contato {
     text-align: center;
-    margin-top: 40px;
+}
+footer div.contato {
     color: #6d6d6d;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    padding-top: 20px;
+    font-size: 0.8rem;
+    line-height: 22px;
 }
 
-/* --- RESPONSIVIDADE (MOBILE) --- */
-@media (max-width: 768px) {
-    .card-container, .treino-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .lado-texto {
-        text-align: center; /* Centraliza texto no mobile */
-    }
-    
-    .lado-imagem img {
-        margin-bottom: 20px;
-    }
 
-    .topo h1 {
-        font-size: 2rem;
-    }
-
-    .menu-lateral {
-        width: 250px;
-    }
-
-    .conteiner {
-        flex-direction: column;
-        text-align: center;
-    }
-}
