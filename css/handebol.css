@@ -100,15 +100,6 @@ body.ativo {
 
 .topo {
 
-    background-size: cover;
-    background-position: top;
-    font-family: "Hammersmith One", sans-serif;
-    text-align: center;
-    opacity: 90%;
-    background:
-    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-    url('../imagem/image76.png') center;
-
   height: 30vh; 
   padding: 0;
   width: 100%;
@@ -482,16 +473,16 @@ footer div.contato {
   }
   
   .topo h1 {
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   .praticar h2 {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 
   .praticar p.sub {
     text-align: justify;
-    font-size: 17px;
+    font-size: 1.15rem;
     flex-direction: column;
     align-items: center;
     text-indent: 20px;
@@ -681,47 +672,45 @@ section.img div img {
     vertical-align: bottom;
   }
 
-  footer {
-    background-color: #d3e6d3;
-    padding: 4vw;
-  }
-  footer div.conteiner {
-    display: flex;
-    justify-content: space-between;
-  }
-  footer div.conteiner div.redes h4 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding-bottom: 10px;
-  }
-  footer div.conteiner div.redes p {
-    color: #4e4e4e;
-    font-size: 1rem;
-  }
-  footer div.conteiner div.redes nav p {
-    color: #000;
-    font-size: 1.8rem;
-    padding: 20px 10px;
-  }
-  footer div.conteiner div.redes nav p a {
-    padding-right: 15px;
-  }
+    footer div.conteiner div.redes h4 {
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
 
-  footer div.conteiner div.esporte nav ul li h4 {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 15px;
-  }
-  footer div.conteiner div.esporte nav ul li a {
-    color: #4e4e4e;
-    font-size: 1rem;
-  }
-  footer div.contato {
-    text-align: center;
-  }
-  footer div.contato {
-    color: #6d6d6d;
-    font-size: 0.8rem;
-    line-height: 22px;
-  }
+    footer div.conteiner div.redes p {
+        font-size: 0.9rem;
+        padding-right: 30px;
+    }
+
+    footer div.conteiner div.redes nav p {
+        font-size: 1.4rem;
+        padding: 9px 5px;
+    }
+
+    footer div.conteiner div.redes nav p a {
+        padding-right: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li h4 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li {
+        color: #4e4e4e;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    footer div.contato {
+        text-align: center;
+    }
+
+    footer div.contato {
+        color: #6d6d6d;
+        font-size: 0.8rem;
+        line-height: 22px;
+    }
+
 
