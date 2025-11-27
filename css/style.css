@@ -509,7 +509,9 @@ footer div.contato {
         margin: 0;
         padding: 10px 20px;
     }
-
+    .topo {
+    background-size: cover;
+    }
     .escolher h2 {
         font-size: 1.6rem;
         margin: 0 2rem;
