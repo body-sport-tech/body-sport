@@ -60,6 +60,7 @@
             </ul>
         </nav>
     </header>
+    <div class="background"></div>
     <main>
     <section class="primeiro">
         <div>
@@ -108,7 +109,7 @@
                     Qual a sua idade?
                     
                 </label>
-                <input type="text" name="idade" id="idade" required>
+                <input type="number" name="idade" id="idade" required>
             </div>
 
             <div class="campo">
@@ -130,7 +131,9 @@
              
             </div>
 
-            <button type="submit">Concluído</button>
+            <button type="submit" onclick="pagFinal()">
+                
+                Concluído</button>
             
         </fieldset>
       </form>
@@ -219,8 +222,9 @@
         </div>
 
     </footer>
+<script src="script.js"></script>
+<script src="quest.js"></script>
 
    
 </body>
-<script src="script.js"></script>
 </html>

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light only">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -63,6 +64,9 @@
                 <li>
                     <a href="bibliografia.html">Referências</a>
                 </li>
+                 <li>
+                    <a href="questionario.html">Questionário</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -92,14 +96,14 @@
 
                     </li>
                 </ul>
-
+                
                 <ul class="lista">
-                    <h3>Hidratação</h3>
+                    
                     <li>
-
+                        <h3>Hidratação</h3>
                         <p>
-                            Fundamental antes, durante e <br> depois do treino. <br>
-                            Água é essencial, mas para treinos <br> longos ou intensos, bebidas isotônicas <br> podem
+                            Fundamental antes, durante e depois do treino. 
+                            Água é essencial, mas para treinos longos ou intensos, bebidas isotônicas <br> podem
                             ajudar a repor eletrólitos.
                         </p>
                     </li>
@@ -119,13 +123,13 @@
                 </ul>
 
                 <ul class="lista">
-                    <h3>Suplementação</h3>
+                    
                     <li>
-
+                        <h3>Suplementação</h3>
                         <p>
-                            Pode ser usada quando a dieta <br> não consegue suprir <br> todas as necessidades. <br>
-                            Exemplos: whey protein,creatina, <br> BCAAs, multivitamínicos. <br>
-                            Sempre preferir <br> orientação de nutricionista esportivo. </p>
+                            Pode ser usada quando a dieta não consegue suprir todas as necessidades.<br>
+                            Exemplos: whey protein,creatina, BCAAs, multivitamínicos.
+                            Sempre preferir orientação de nutricionista esportivo. </p>
                     </li>
 
                 </ul>
@@ -164,7 +168,7 @@
                         </p>
                         <h3>Objetivo:</h3>
                         <p>
-                            Repor glicogênio muscular <br> e iniciar a recuperação com <br> proteína.
+                            Repor glicogênio muscular <br> e iniciar a recuperação com proteína.
                         </p>
                     </li>
                 </ul>
@@ -189,7 +193,7 @@
 
             </p>
             <div>
-                <img src="imagem/image 134.png" alt="tabela">
+                <img src="imagem/image134.png" alt="tabela">
             </div>
 
         </section>
@@ -218,29 +222,32 @@
                     Calculadora - IMC
                 </h1>
                 <div class="input-box">
-                    <label for="weight">
-                        Peso em Kg
-                    </label>
-                </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-weight-hanging"></i>
-                    <input type="number" id="weight" required>
-                    <span>Kg</span>
-                </div>
+    <label for="weight">Peso em Kg</label>
+
+    <div class="input-field">
+        <i class="fa-solid fa-weight-hanging"></i>
+        <input type="number" id="weight" required>
+        <span>Kg</span>
+    </div>
+
+    <p class="erro" id="erro-weight"></p>
+</div>
 
                 <div class="input-box">
                     <label for="height">
-                        Altura em metros
+                        Altura em centimetros
                     </label>
                 </div>
                 <div class="input-field">
                     <i class="fa-solid fa-ruler"></i>
                     <input type="number" id="height" required>
-                    <span>m</span>
+                    <span>cm</span>
                 </div>
+                <p class="erro" id="erro-height"></p>
                 <button id="calculate">
                     Calcular
                 </button>
+                
             </form>
             <div id="infos" class="hidden">
                 <div id="result">
@@ -347,8 +354,8 @@
 
     </footer>
 
-
-</body>
 <script src="script.js"></script>
+</body>
+
 
 </html>

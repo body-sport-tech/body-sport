@@ -95,7 +95,7 @@ body.ativo {
     opacity: 90%;
     background: 
     linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
-    url('../imagem/image\ 14.png') center;
+    url('../imagem/image14.png') center;
 }
 
 .topo h1 {
@@ -147,8 +147,8 @@ section.exercicios div ul h3 {
     color: #02210C;
     font-weight: bold;
     font-size: 1.6rem;
-     padding: 10px 10px;
-   margin: 2vw 3vw;
+    padding: 10px 10px;
+    margin: 2vw 3vw;
 }
 section.exercicios div ul li p {
     color: #808080;
@@ -300,4 +300,81 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+@media (max-width: 600px) {
+
+    section.exercicios div ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+         margin: 1vw;
+    }
+     section.exercicios div ul.lista2{
+        display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         margin: 1vw;
+     }
+     section.exercicios div ul li {
+        margin: 1vw 3vw 1vw 3vw ;
+     }
+
+    .exercicios div ul li h3 {
+        font-size: 1.5rem;
+        margin: 6vw 0;
+    }
+
+    .exercicios p {
+        font-size: 1rem;
+        margin: 4vw 0;
+        text-align: justify;
+        text-indent: 20px; 
+    }
+
+    .alimentacao h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3vw 2vw 1vw ;
+    padding: 5px 5px;
+}
+
+.alimentacao ul li p{
+     font-size: 0.7rem;
+    margin: 1px ;
+     padding: 5px 5px;
+}
+
+    .menu-lateral {
+        width: 250px;
+        left: -250px;
+      
+    }
+    section.meio p {
+    margin: 2vw  15vw 2vw 15vw;
+    font-size: 0.7rem;
+}
+.sobre h2 {
+    font-size: 1.6rem;
+}
+
+
+.alimentacao ul li {
+margin:0 20px;
+}
+.alimentacao ul{
+    margin: 3vw 4vw;
+}
+    .topo{
+        background-size: cover;
+    }
+    section.treinos div ul li{
+        margin: 6vw 4vw 7vw 0vw;
+    }
+    section.meio div ul h2{
+        font-size: 1.4rem;
+    }
+    section.meio div ul li.img{
+        padding: 0;
+    }
+    section.img div img{
+        width: 2%;
+    }
 }

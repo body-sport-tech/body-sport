@@ -160,7 +160,7 @@ section.img div img {
     text-align: center;
     margin: 2vw 16vw;
 }
-footer {
+footer {    padding: 2vw 10vw;
     background-color: #D3E6D3;
     padding: 4vw;
 }
@@ -202,4 +202,23 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+
+@media (max-width: 600px){
+    section.topo {
+    padding: 2vw 0vw 8vw 0vw;
+    }
+    section.topo h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    }
+    section.praticar h2 {
+    font-size: 1.8rem;
+    }
+    section.fontes ul {
+    margin: 0;
+    }    
+    section.fontes ul li{
+    margin: 2vw 6vw 4vw 6vw;
+    }
 }

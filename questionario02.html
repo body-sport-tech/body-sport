@@ -59,6 +59,7 @@
             </ul>
         </nav>
     </header>
+    <div class="background"></div>
     <main>
          <section class="primeiro">
         <div>
@@ -88,32 +89,32 @@
         <p id="subtitulo">Quais esportes gostaria de praticar?</p>
         <br>
       </div>
-
-      <form action="questionario03.html">
+ <form action="questionario03.html" id="form-esportes">
         <fieldset class="grupo">
            
-          <input type="checkbox" id="capoeira" name="esporte" value="capoeira">
+          <input type="checkbox" id="capoeira" name="esporte" value="Capoeira" >
           <label for="capoeira">Capoeira</label>
 
-           <input type="checkbox" id="natacao" name="esporte" value="natacao">
+           <input type="checkbox" id="natacao" name="esporte" value="Natação">
           <label for="natacao">Natação</label>
 
-           <input type="checkbox" id="ciclismo" name="esporte" value="ciclismo">
+           <input type="checkbox" id="ciclismo" name="esporte" value="Ciclismo">
           <label for="ciclismo">Ciclismo</label>
 
-           <input type="checkbox" id="handebol" name="esporte" value="handebol">
+           <input type="checkbox" id="handebol" name="esporte" value="Handebol">
           <label for="handebol">Handebol</label>
 
-           <input type="checkbox" id="basquete" name="esporte" value="basquete">
+           <input type="checkbox" id="basquete" name="esporte" value="Basquete">
           <label for="basquete">Basquete</label>
 
-           <input type="checkbox" id="volei" name="esporte" value="volei">
+           <input type="checkbox" id="volei" name="esporte" value="Volêi">
           <label for="volei">Volêi</label>
 
-           <input type="checkbox" id="futebol" name="futebol" value="futebol">
+           <input type="checkbox" id="futebol" name="esporte" value="Futebol">
           <label for="futebol">Futebol</label>
            
-            <button type="submit">Concluído</button>
+            <button id="botaoEnviar" type="submit">
+                Concluído</button>
             
          
         </fieldset>
@@ -204,9 +205,10 @@
         </div>
 
     </footer>
+<script src="script.js"></script>
+<script src="quest.js" defer></script>
 
 
     
 </body>
-<script src="script.js"></script>
 </html>
