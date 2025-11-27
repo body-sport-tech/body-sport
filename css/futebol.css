@@ -116,7 +116,7 @@ section.meio h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    margin: 3vw 8vw;
+    margin: 4vw 8vw;
 }
 section.meio div ul h3 {
     text-align: center;
@@ -296,9 +296,10 @@ footer div.contato {
     font-size: 2rem;
     } 
     section.meio h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     }
     section.meio p {
+    font-size: 1.1rem;
     margin: 2vw 15vw;
     }
     section.meio div ul h3 {
@@ -376,4 +377,44 @@ footer div.contato {
     margin: 2vw 2vw 0 0;
     }
 
+    footer div.conteiner div.redes h4 {
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.redes p {
+        font-size: 0.9rem;
+        padding-right: 30px;
+    }
+
+    footer div.conteiner div.redes nav p {
+        font-size: 1.4rem;
+        padding: 9px 5px;
+    }
+
+    footer div.conteiner div.redes nav p a {
+        padding-right: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li h4 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li {
+        color: #4e4e4e;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    footer div.contato {
+        text-align: center;
+    }
+
+    footer div.contato {
+        color: #6d6d6d;
+        font-size: 0.8rem;
+        line-height: 22px;
+    }
 }
