@@ -86,20 +86,15 @@
        Olá! <span>Fulano</span>
     </h1>
     <p>
-        Obrigado por nos responder!
+        Obrigado por nos responder! <br>
+        Vimos que gostaria de praticar:
     </p>
-
-    <p>
-     Vimos que gostaria de praticar:   
-     </p>
+   
+   
   
-    
-    
-   
+    <div id="lista-esportes">
 
-
-   
-    
+    </div>
 
   </section>
     
@@ -183,22 +178,32 @@
 
 <script src="script.js"></script>
 <script>
+  document.addEventListener('DOMContentLoaded', function () {
 
-       window.onload = function(){
-        let nome = localStorage.getItem("nome");
-        document.querySelector(".parte h1 span").innerHTML = nome;
-       }
-    ////
+    const nome = localStorage.getItem("nome") || "Fulano";
+    const nomeSpan = document.querySelector(".parte h1 span");
+    if (nomeSpan) nomeSpan.textContent = nome;
 
-//esportes
- /*let esportes = JSON.parse(localStorage.getItem("esportes"));
+    const area = document.getElementById("lista-esportes");
+    if (!area) return;
 
-   let area = document.getElementById("lista-esportes");
-   area.innerHTML = esportes.map(e => `${e}`).join(",");
-
+    const esportesRaw = localStorage.getItem("esportes");
+    if (!esportesRaw) {
+      area.textContent = "Nenhum esporte selecionado.";
+      return;
     }
-   */
 
-
+    try {
+      const esportes = JSON.parse(esportesRaw);
+      if (!Array.isArray(esportes) || esportes.length === 0) {
+        area.textContent = "Nenhum esporte selecionado.";
+      } else {
+        area.innerHTML = esportes.map(e => `<span>${e}</span>`).join(", ");
+      }
+    } catch (err) {
+      console.error("Erro ao ler espotes do localStorage:", err);
+      area.textContent = "Erro ao carregar esportes";
+    }
+  });
 </script>
 </html>

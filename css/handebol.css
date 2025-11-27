@@ -99,6 +99,16 @@ body.ativo {
 }
 
 .topo {
+
+    background-size: cover;
+    background-position: top;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    opacity: 90%;
+    background:
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+    url('../imagem/image76.png') center;
+
   height: 30vh; 
   padding: 0;
   width: 100%;
@@ -115,7 +125,8 @@ body.ativo {
       rgba(252, 252, 252, 1),
       transparent 20%
     ),
-    url("../imagem/image\ 96.png");
+    url("../imagem/image96.png");
+
 }
 
 .topo h1 {
@@ -124,7 +135,6 @@ body.ativo {
   text-align: left;
   margin: 10px;
 }
-
 .praticar {
   margin: 4vw 8vw;
 }
@@ -465,7 +475,7 @@ footer div.contato {
 }
 
 @media (max-width: 600px) {
-  
+
   .topo {
     padding: 15vh 0 5vh 0; 
     background-position: center;
@@ -487,6 +497,7 @@ footer div.contato {
     text-indent: 20px;
     margin: 4vw 0;
   }
+
 
 .cards {
     margin: 3vw 2vw;   
@@ -549,14 +560,15 @@ footer div.contato {
   }
 
  .cima .text {
+
     text-align: left; 
     padding: 0;
   }
   
-  .exercicio .cartao div.text p {
+  .exercicio .cartao ul.cartoes li div.text p {
     padding: 2px 0 2px 5vw; 
     text-align: left; 
-    margin: 0;
+    margin: 0 25vw 0 0;
   }
 
   .dicas ul li p {
