@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       cartoes.setAttribute('aria-hidden', (!aberto).toString());
     });
   }
-
+///
   
   function pegarValoresInternal() {
 
@@ -47,12 +47,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const formEsportes = document.getElementById('form-esportes');
   const botaoEnviar = document.getElementById("botaoEnviar");
+  
   if (formEsportes) {
     formEsportes.addEventListener('submit', function (e) {
       pegarValoresInternal();
   
     });
-  } else if (botaoEnviar) {
+  // } else if (botaoEnviar) {
+  
+  if (botaoEnviar) {
+    botaoEnviar.addEventListener("click", pegarValoresInternal);
+  }
 
     botaoEnviar.addEventListener("click", pegarValoresInternal);
   }
