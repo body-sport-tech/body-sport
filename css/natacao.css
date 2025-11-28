@@ -143,7 +143,7 @@ section.meio > p {
 section.meio div ul h2 {
     text-align: center;
     color: #02210C;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -156,203 +156,67 @@ section.meio div ul h2 {
 section.meio div {
     background-color: #D3E6D3;
     border-radius: 50px;
-    margin: 0vw 10vw 5vw 10vw;
+    margin: 0vw 15vw 5vw 15vw;
 }
 
 section.meio div ul li.img {
-    text-align: center; 
+    text-align: center;
+    margin: 2rem;
+    padding: 3rem;
 }
+
+section.meio div ul li.img h2 {
+    margin: 20px 0 30px 0;
+    padding: 0;
+}
+
+section.meio div ul li.img img {
+    width: 130px;
+    margin: 0;
+    padding: 1vw;
+    background-color: #ABD0B5;
+    border-radius: 50%;
+}
+
+section.meio div ul li.img p {
+    margin: 0 0 10px 0;
+}
+
 .meio ul {
     width: 100%;
 }
 
-
-
-
-
-.nado div ul.img {
-    text-align: left;
-    position: absolute;
-    font-weight: bold;
+.nado, .borboleta, .peito, .costas {
+    background-color: #D3E6D3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7vh 15vw;
+    padding: 5vw;
+    border-radius: 50px;
 }
 
-.nado div ul {
-    text-align: right;
-    padding-right: 10vw;
-    margin: 3vw 0vw;
+.nado .lista li, .borboleta .lista li, .peito .lista li, .costas .lista > li {
+    margin: 0 0 2vh 0;
 }
 
-.nado div ul.lista h3 {
+.nado .img, .borboleta .img, .peito .img, .costas .img {
+    margin: 0 5vw;
+}
 
+.nado, .borboleta, .peito, .costas, .img > li h3 {
+    color: #02210C;
     font-size: 1.4rem;
     font-weight: bold;
-    padding: 10px 10px;
-    color: #02210C;
+}
+.nado .lista li h3, .borboleta .lista li h3, .peito .lista li h3, .costas .lista li h3 {
+    color: #000;
 }
 
-.nado div ul.lista p {
+.nado, .borboleta, .peito, .costas,.img .lista li p {
     color: #494949;
     font-size: 1.2rem;
-    padding: 10px 10px;
 }
-
-.nado div {
-    background: #D3E6D3;
-    margin: 0vw 10vw 5vw 10vw;
-    border-radius: 15px;
-}
-
-.nado div ul.img li h3 {
-    color: #02210C;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 10px 10px;
-}
-
-.nado div ul.img li img {
-    width: 80%;
-}
-
-.borboleta div ul {
-    text-align: right;
-    padding-right: 10vw;
-    margin: 3vw 0vw;
-
-}
-
-.borboleta div ul.lista h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 10px 10px;
-    color: #02210C;
-}
-
-.borboleta div ul.lista p {
-    color: #494949;
-    font-size: 1.2rem;
-    padding: 10px 10px;
-}
-
-.borboleta div {
-    background: #D3E6D3;
-    margin: 0vw 10vw 5vw 10vw;
-    border-radius: 15px;
-}
-
-.borboleta div ul.img li h3 {
-    color: #02210C;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 10px 10px;
-}
-
-.borboleta div ul.img li img {
-    width: 80%;
-}
-
-.borboleta div ul.img {
-    text-align: left;
-    padding-left: 15vw;
-    margin: 5vw 0vw 5vw;
-    position: absolute;
-    font-weight: bold;
-}
-
-.peito div ul.img {
-    text-align: left;
-    padding-left: 15vw;
-    margin: 5vw 0vw 5vw;
-    position: absolute;
-    font-weight: bold;
-
-}
-
-.peito div ul {
-    text-align: right;
-    padding-right: 10vw;
-    margin: 3vw 0vw;
-
-
-}
-
-.peito div ul.lista h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 10px 10px;
-    color: #02210C;
-}
-
-.peito div ul.lista p {
-    color: #494949;
-    font-size: 1.2rem;
-    padding: 10px 10px;
-}
-
-.peito div {
-    background: #D3E6D3;
-    margin: 0vw 10vw 5vw 10vw;
-    border-radius: 15px;
-}
-
-.peito div ul.img li h3 {
-    color: #02210C;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 10px 10px;
-}
-
-.peito div ul.img li img {
-    width: 80%;
-}
-
-.costas div ul.img {
-    text-align: left;
-    padding-left: 15vw;
-    margin: 5vw 0vw 5vw;
-    position: absolute;
-    font-weight: bold;
-
-
-}
-
-.costas div ul {
-    text-align: right;
-    padding-right: 10vw;
-    margin: 3vw 0vw;
-
-
-}
-
-.costas div ul.lista h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #02210C;
-}
-
-.costas div ul.lista p {
-    color: #494949;
-    font-size: 1.2rem;
-    padding: 10px 10px;
-}
-
-.costas div {
-    background: #D3E6D3;
-    margin: 0vw 10vw 5vw 10vw;
-    border-radius: 15px;
-}
-
-.costas div ul.img li h3 {
-    color: #02210C;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 10px 10px;
-}
-
-.costas div ul.img li img {
-    width: 80%;
-}
-
-
 
 .treinamento h3 {
     text-align: center;
