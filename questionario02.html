@@ -92,7 +92,7 @@
  <form action="questionario03.html" id="form-esportes">
         <fieldset class="grupo">
            
-          <input type="checkbox" id="capoeira" name="esporte" value="Capoeira" >
+          <input type="checkbox" id="capoeira" name="esporte" value="Capoeira"  >
           <label for="capoeira">Capoeira</label>
 
            <input type="checkbox" id="natacao" name="esporte" value="Natação">
@@ -113,7 +113,7 @@
            <input type="checkbox" id="futebol" name="esporte" value="Futebol">
           <label for="futebol">Futebol</label>
            
-            <button id="botaoEnviar" type="submit">
+            <button id="botaoEnviar" onclick="pegarValores()">
                 Concluído</button>
             
          
@@ -207,8 +207,8 @@
     </footer>
 
 
-    
+ <script src="script.js"></script>
+<script src="quest.js" defer></script>   
 </body>
-<script src="script.js"></script>
-<script src="quest.js" defer></script>
+
 </html>
