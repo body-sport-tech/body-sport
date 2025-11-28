@@ -259,46 +259,27 @@ body.ativo {
 .icone-alongamento img {
   width: 70px;
 }
+
 .fundamental h2 {
   text-align: center;
   color: #02210c;
   font-weight: bold;
   font-size: 2rem;
 }
-.fundamental h3 {
-  text-align: left;
-  color: #02210c;
-  font-weight: bold;
-  font-size: 1.6rem;
-  padding: 1vw 2vw;
-}
 .fundamental div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #d3e6d3;
-  margin: 3vw 5vw;
-  border-radius: 30px;
+    
 }
-.fundamental div img{
-  max-width: 35%;
-  height: auto;
-  margin-right: 20px;
+.fundamental div img {
+    
 }
-.fundamental div ul{
-  max-width: 60%;
-  list-style: none;
-}
+
 .fundamental div ul.text {
-  padding: 3vw;
+   
 }
+
+
 .fundamental div ul.text p {
-  padding: 5px 3vw;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 1.1rem;
-}
-.fundamental img.pliometria {
-  height: 43vw;
+  font-size: 1.3rem;
 }
 .dicas {
   margin: 3vw 30vw;
@@ -586,25 +567,67 @@ footer div.contato {
 font-size: 1.55rem;
 margin: 10vw 0 7vw 0;
 }
-.fundamental div {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .fundamental div img{
-   max-width: 90%;
-   margin: 15px auto;
-  }
 
-  
-  .fundamental div ul.text {
-    padding: 5vw 4vw 8vw; 
-  }
-  
-  .fundamental h3 {
-    padding: 4vw 0 1vw 0;
-    font-size: 1.3rem;
-  }
+
+.fundamental {
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.fundamental h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.fundamental > div {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: stretch;
+    margin-bottom: 25px;
+    gap: 20px; 
+}
+
+.fundamental > div img {
+    flex: 1; 
+    min-width: 300px; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.fundamental > div > ul {
+    flex: 1; 
+    min-width: 300px;
+    display: flex; 
+    gap: 20px; 
+    background-color: #e6f0e6;
+    border-radius: 15px; 
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+}
+
+    .fundamental > div > ul > li {
+        flex: 1; 
+    }
+
+    .fundamental > div > ul > li h3 {
+        font-size: 1.25em;
+        color: #222;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .fundamental > div > ul > li p {
+        margin: 0 0 10px 0;
+        line-height: 1.5;
+        color: #333;
+    }
+
+
 
     section.alimentacao h2 {
         font-size: 1.4rem;
