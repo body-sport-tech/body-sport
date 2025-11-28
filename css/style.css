@@ -113,9 +113,15 @@ body.ativo .body ul li p a {
     font-family: "Hammersmith One", sans-serif;
     text-align: center;
     opacity: 85%;
+<<<<<<< HEAD
+    background: 
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%), 
+    url('../imagem/image87.png')center;
+=======
     background:
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
         url('../imagem/image\ 87.png') center;
+>>>>>>> 1018c7f3e154e45491b647fad18ef81c7b4faa23
 }
 
 .topo h1 {
@@ -394,6 +400,7 @@ footer div.contato {
 
 /* Responsividade - Camila */
 
+
 @media (max-width: 768px) {
 
     .body ul {
@@ -405,8 +412,8 @@ footer div.contato {
     }
 
     .info div {
-       /* flex-direction: column;
-        align-items: center;*/
+        /* flex-direction: column;
+        align-items: center; - ajuda do kennedy*/
         display: block;
     }
 
@@ -438,16 +445,6 @@ footer div.contato {
         left: -250px;
     }
 
-<<<<<<< HEAD
-    .body ul li img {
-        width: 100%;
-        border-radius: 10px;
-        
-    }
-
-    .body ul li h4 {
-        font-size: 1.1rem;
-=======
     .body ul li {
         margin: 5vw;
         display: flex;
@@ -467,20 +464,12 @@ footer div.contato {
         padding: 0;
         margin: 0;
         font-size: 1.2rem;
->>>>>>> 28d53a1a86659e9a4882bbc715a9872f8de35ad5
         text-align: center;
     }
 
     .body ul li p {
         width: 80%;
         font-size: 1rem;
-<<<<<<< HEAD
-        text-align: center; 
-    } /* ainda precisa arrumar */
-
-    .body ul li {
-        padding: 3vw;
-=======
         text-align: center;
         margin: 10px auto;
         line-height: 1.4;
@@ -497,7 +486,16 @@ footer div.contato {
     }
 
     .escolher .escolha li p a {
+        font-size: 1.2rem;
+    }
+
+    .escolher .card .cards li div.icon img {
+        width: 40px;
+    }
+
+    .escolher .card .cards li h3 {
         font-size: 1.3rem;
+        margin: 0;
     }
 
     .sobre h2 {
@@ -520,7 +518,8 @@ footer div.contato {
     }
 
     .sobre h2 {
-        margin: 5vw 0 7vw 0;
+        font-size: 1.3rem;
+        margin: 10vw 0 10vw 0;
     }
 
     .sobre ul.fundo li video {
@@ -538,12 +537,65 @@ footer div.contato {
 
     .info div p img {
         width: 160px;
-    
+
     }
 
     .info div p {
         text-align: right;
->>>>>>> 28d53a1a86659e9a4882bbc715a9872f8de35ad5
+    }
+
+    .info div ul li h3 {
+        font-size: 1.2rem;
+    }
+
+    .info div ul li p {
+        font-size: 1rem;
+        margin-right: 3rem;
+    }
+
+    .info div p img {
+        width: 100px;
+    }
+
+    footer div.conteiner div.redes h4 {
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.redes p {
+        font-size: 0.9rem;
+        padding-right: 30px;
+    }
+
+    footer div.conteiner div.redes nav p {
+        font-size: 1.4rem;
+        padding: 9px 5px;
+    }
+
+    footer div.conteiner div.redes nav p a {
+        padding-right: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li h4 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li {
+        color: #4e4e4e;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    footer div.contato {
+        text-align: center;
+    }
+
+    footer div.contato {
+        color: #6d6d6d;
+        font-size: 0.8rem;
+        line-height: 22px;
     }
 
 }

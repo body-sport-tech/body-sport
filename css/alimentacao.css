@@ -110,7 +110,7 @@ body.ativo {
     opacity: 90%;
     background:
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 70%),
-        url('../imagem/image\ 11.png') top;
+        url('../imagem/image11.png') top;
 }
 
 .topo h1 {
@@ -175,7 +175,7 @@ section.meio h2 {
 .nado div ul.img li img {
     width: 90%;
 } 
-.nado div ul.lista  h3 {
+.nado div ul.lista li h3 {
          text-align: center;
          font-size: 2.3rem;
          padding-left: 10vw;
@@ -393,7 +393,7 @@ footer div.contato {
     font-size: 0.8rem;
     line-height: 22px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) { 
     body.ativo {
         margin-left: 260px;
     }
@@ -432,7 +432,7 @@ section.meio h2 {
 .nado div ul.lista p {
     padding: 3vw 5px 3vw 15px;  
 }
-.nado div ul.lista h3 {
+.nado div ul.lista li h3 {
     text-align: center;
     font-size: 1.8rem;
 }

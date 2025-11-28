@@ -99,25 +99,43 @@ body.ativo {
 }
 
 .topo {
-  padding: 30vw 50vw 4vw 5vw;
-  background-size: cover;
-  background-position: top;
-  width: auto;
+<<<<<<< HEAD
+    padding: 30vw 50vw 4vw 5vw;
+    background-size: cover;
+    background-position: top;
+    width: auto;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    opacity: 90%;
+    background:
+    linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
+    url('../imagem/image96.png') center;
+=======
+  height: 30vh; 
+  padding: 0;
+  width: 100%;
+  
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  
   font-family: "Hammersmith One", sans-serif;
   text-align: center;
   opacity: 90%;
-  background: linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(252, 252, 252, 1),
       transparent 20%
     ),
-    url("../imagem/image\ 96.png") center;
+    url("../imagem/image\ 96.png");
+>>>>>>> 1018c7f3e154e45491b647fad18ef81c7b4faa23
 }
 
 .topo h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   color: #ecf1ee;
-  text-align: center;
+  text-align: left;
+  margin: 10px;
 }
 
 .praticar {
@@ -460,6 +478,12 @@ footer div.contato {
 }
 
 @media (max-width: 600px) {
+  
+  .topo {
+    padding: 15vh 0 5vh 0; 
+    background-position: center;
+  }
+  
   .topo h1 {
     font-size: 40px;
   }
@@ -537,7 +561,126 @@ footer div.contato {
     width: 35px;     
   }
 
+ .cima .text {
+    text-align: left; 
+    padding: 0;
+  }
+  
+  .exercicio .cartao div.text p {
+    padding: 2px 0 2px 5vw; 
+    text-align: left; 
+    margin: 0;
+  }
 
+  .dicas ul li p {
+  font-size: 1.1rem;
+  text-align: left; 
+  color: rgba(0, 0, 0, 0.7);
+  padding: 5px 20px;
+}
+
+.dicas {
+  margin: 4vw; 
+  text-align: left; 
+}
+
+.dicas h2{
+  text-align: center;
+  margin: 1.5rem 0 1.2rem 0 ;
+  font-size: 1.6rem;
+}
+
+.dicas h3{
+  text-align: center;
+}
+.fundamental h2{
+font-size: 1.55rem;
+margin: 10vw 0 7vw 0;
+}
+.fundamental div {
+    display: block; 
+    margin: 4vw 4vw; 
+    text-align: left;
+  }
+  
+  .fundamental div img,
+  .fundamental img.pliometria {
+    width: 100%;
+    height: auto; 
+    border-radius: 30px 30px 0 0; 
+  }
+
+  
+  .fundamental div ul.text {
+    padding: 5vw 4vw 8vw; 
+  }
+  
+  .fundamental h3 {
+    padding: 4vw 0 1vw 0;
+    font-size: 1.3rem;
+  }
+
+    section.alimentacao h2 {
+        font-size: 1.4rem;
+        margin: 6vw 20vw 2vw 20vw;
+        }
+    section.alimentacao ul {
+        text-align: center;
+        margin: 4vw 10vw;
+        padding: 3vw 7vw;
+    }
+    section.alimentacao ul li p {
+        font-size: 1rem;
+        }
+         section.alimentacao ul li p span {
+        font-size: 1rem;
+        }
+    section.alimentacao ul li h3 {
+        font-size: 1.1rem;
+    }
+ section.sobre h2 {
+        font-size: 1.3rem;
+        margin: 6vw 8vw;
+        font-weight: 500;
+        }
+
+  .profissional h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+   .profissional p{
+     font-size: 1.2rem;
+     padding: 0 10vw;
+   }
+   .img div{
+    text-align: right;
+   }
+   .img div.img {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+   }
+   section.img {
+  margin: 0;
+  padding: 0;
+}
+
+section.img div {
+  text-align: right;
+  line-height: 0; 
+}
+
+section.img div img {
+  width: 25%; 
+  height: auto; 
+  margin: 0;
+  
+  vertical-align: bottom; 
+}
+section.img div img {
+    width: 35%; 
+    vertical-align: bottom;
+  }
 
   footer {
     background-color: #d3e6d3;

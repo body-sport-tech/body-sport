@@ -108,7 +108,7 @@ body.ativo {
     opacity: 90%;
     background:
         linear-gradient(to bottom, rgba(252, 252, 252, 1), transparent 20%),
-        url('../imagem/image\ 8.png') top;
+        url('../imagem/image8.png') top;
 }
 
 .topo h1 {
@@ -379,4 +379,106 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+
+@media (max-width: 600px) {
+
+    .topo h1 {
+        font-size: 40px;
+      }
+    
+      .praticar h2 {
+        font-size: 25px;
+      }
+    
+      .praticar p.sub {
+        text-align: justify;
+        font-size: 17px;
+        flex-direction: column;
+        align-items: center;
+        text-indent: 20px;
+        margin: 4vw 0;
+      }
+    .fundamentos {
+        margin: 3vw 1vw;
+    }
+    .fundamentos ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .fundamentos ul li {
+        border: 7px solid #D3E6D3;
+        padding: 15px;
+        margin: 1rem 3rem;
+        border-radius: 12px;
+    }
+
+    .fundamentos ul li h3 {
+        font-size: 1.1rem;
+        padding: 5px 5px 5px;
+    }
+    
+    .fundamentos ul li p {
+        padding: 0 5px 5px;
+        font-size: 0.9rem;
+    }
+    .cards {
+        margin: 3vw 2vw;   
+        padding: 4vw;      
+        border-radius: 20px;
+      }
+    
+      .card {
+        margin: 0;         
+        padding: 0;
+      }
+      .icon {
+        margin: 2vw auto 3vw;
+      }
+    
+      .praticar p.sub {
+        margin: 2vw 4vw;  
+      }
+    
+      .praticar div.card p {
+        line-height: 1.1;
+        text-align: justify;
+      }
+      
+      .fundamentos h2 {
+        font-size: 1.5rem;
+      }
+      .dicas h2 {
+        font-size: 1.5rem;
+      }
+      .dicas {
+        margin: 4vw 9vw 4vw 9vw;
+      }
+      .dicas ul li p {
+        font-size: 0.9rem;
+      }
+      .exercicio ul li p {
+        font-size: 1rem ;
+        font-weight: bold;
+      }
+      section.alimentacao h2 {
+        font-size: 1.4rem;
+        margin: 6vw 20vw 2vw 20vw;
+        }
+    section.alimentacao ul {
+        text-align: center;
+        margin: 4vw 10vw;
+        padding: 2vw 4vw;
+    }
+    section.alimentacao ul li p {
+        font-size: 1rem;
+        }
+        section.sobre h2 {
+        font-size: 1.2rem;
+        margin: 6vw 8vw;
+        }
+    section.alimentacao ul li h3 {
+        font-size: 1.2rem;
+    }
 }
