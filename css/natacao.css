@@ -4,20 +4,21 @@
     --text-color: #a3a3a3;
     --text-secondary-color: #001100;
     --background-color: #013612;
+    --card-bg: #D3E6D3;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8FBF8;
-    transition: background-color 0.5s ease;
-    transition: all 0.5s ease;
-}
-body.ativo {
-    margin-left: 300px;
-    background-color: transparent;
     transition: all 0.5s ease;
 }
 
+body.ativo {
+    margin-left: 300px;
+    background-color: transparent;
+}
+
+/* --- MENU LATERAL --- */
 .menu-lateral {
     position: fixed;
     left: -300px;
@@ -51,11 +52,11 @@ body.ativo {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: 0.3s;
 }
 
 .menu-lateral ul li:hover {
     background-color: var(--secondary-color);
-    font-style: italic;
 }
 
 .toggle {
@@ -64,13 +65,17 @@ body.ativo {
     left: 20px;
     top: 20px;
     z-index: 6;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 24px;
     border: none;
-    padding: 10px 15px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     color: #ecf1ee;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .toggle:hover {
@@ -91,6 +96,7 @@ body.ativo {
     opacity: 0;
     visibility: hidden;
     z-index: 4;
+    transition: 0.3s;
 }
 
 .background.ativo {
@@ -98,41 +104,32 @@ body.ativo {
     visibility: visible;
 }
 
+/* --- TOPO --- */
 .topo {
-    height: 30vh; 
-    padding: 0;
+    height: 30vh;
     width: 100%;
-    
-    background-size: contain;
-    background-repeat: no-repeat; 
-    background-position: center; 
-    
+    background-size: cover;
+    background-position: center;
     font-family: "Hammersmith One", sans-serif;
-    text-align: center;
-    opacity: 90%;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(252, 252, 252, 1),
-        transparent 20%
-      ),
-      url("../imagem/bannernatacao.png");
-  }
-  
-  .topo h1 {
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to bottom, rgba(252, 252, 252, 0.8), transparent), url("../imagem/bannernatacao.png");
+}
+
+.topo h1 {
     font-size: 3rem;
     color: #ecf1ee;
-    text-align: left;
-    margin: 10px;
-    padding: 40vw 0 2vw 2vw;
-  }
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
 section.meio p {
     text-align: center;
     margin: 2vw  15vw 2vw 15vw;
     font-size: 1.2rem; 
 }
+
 section.meio h2 {
     color: #013612;
-    text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
     margin: 3vw 8vw;
@@ -299,7 +296,6 @@ section.meio div ul li.img {
 .costas div ul.lista h3 {
     font-size: 1.4rem;
     font-weight: bold;
-    padding: 10px 10px;
     color: #02210C;
 } 
 .costas div ul.lista p {
@@ -324,9 +320,8 @@ section.meio div ul li.img {
 .treinamento h3 {
     text-align: center;
     color: #02210C;
-    font-weight: 400;
     font-size: 2rem;
-    padding: 30px 0px 30px 0px;
+    margin-bottom: 30px;
 }
 .treinamento div  {
     display: flex;
@@ -377,9 +372,6 @@ section.meio div ul li.img {
 }
 .adicionais h2 {
     text-align: center;
-    font-size: 2.3rem;
-    color: #02210C;
-    font-weight: 600;
 }
 .adicionais div ul {
     display: grid;
@@ -407,8 +399,11 @@ section.meio div ul li.img {
     margin: 2vw 2vw;
     padding: 2vw 3vw;
 }
+
 .alimentacao {
-    margin: 0 14vw;
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
 }
 .alimentacao div ul {
     background:#D3E6D3 ;
@@ -424,7 +419,6 @@ section.meio div ul li.img {
 }
 .alimentacao div ul h3 {
     color: #02210C;
-    text-align: left;
     font-size: 1.4rem;
     font-weight: 600;
     padding: 2vw 3vw 0vw;
@@ -446,6 +440,7 @@ section.meio div ul li.img {
     margin: 3vw 5vw;
     border-radius: 20px;
 }
+
 .sobre {
     margin: 4vw 8vw;
 }
@@ -453,7 +448,7 @@ section.meio div ul li.img {
     font-size: 2rem;
     color: #02210C;
     text-align: center;
-    margin: 2vw 20vw;
+    margin: 50px 20px;
 }
 .sobre ul.fundo {
   list-style: none;
@@ -479,27 +474,23 @@ section.meio div ul li.img {
   border-radius: 8px;
   display: block;
 }
-section.img div  {
-    text-align: right;
-}
-section.img div img {
-    width: 20%;
-    padding: 0;
-    margin: 0;
-    
-}
+
 footer {
     background-color: #D3E6D3;
-    padding: 4vw;
+    padding: 50px 20px;
 }
 footer div.conteiner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
 footer div.conteiner div.redes h4 {
     font-weight: bold;
     font-size: 1.4rem;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 footer div.conteiner div.redes p {
     color: #4e4e4e;
@@ -514,14 +505,16 @@ footer div.conteiner div.redes nav p a {
     padding-right: 15px;
 }
 
-footer div.conteiner div.esporte nav ul li h4 {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 15px;
+.esporte ul {
+    list-style: none;
+    padding: 0;
+}
+
+.esporte li {
+    margin-bottom: 8px;
 }
 footer div.conteiner div.esporte nav ul li a {
     color: #4e4e4e;
-    font-size: 1rem;
 }
 footer div.contato {
     text-align: center;
@@ -532,99 +525,5 @@ footer div.contato {
     line-height: 22px;
 }
 
-@media (max-width: 600px) {
-    section.meio h2 {
-        font-size: 1.5rem;
-        }
-        section.meio p {
-        margin: 2vw 15vw;
-        text-align: justify;
-        }
-        section.meio div ul h2 {
-        font-size: 1.5rem;
-        margin: 0;
-        }
-        section.meio div {
-        margin: 10vw 5vw 15vw 5vw;
-        }
-        section.meio div ul li.img img {
-        width: 25%;
-        }
-        section.meio div ul li.img p {
-        margin: 0 2vw ;
-        text-align: justify;
-        }
-        section.nado ul.img li img {
-        width: 30%;
-        display: none;
-        }
-        section.nado ul.img li h3 {
-        font-size: 2rem;
-        }
-        section.nado ul.img li {
-            display: flex;
-            text-align: center;
-            padding-left: 0vw;
-            margin: 5vw 0vw 5vw;
-            display: none;
-           font-weight: bold;
-        }
-        section.nado div ul {
-            text-align: center;
-        }
-        section.borboleta ul.img li img {
-            width: 30%;
-            display: none;
-            }
-            section.borboleta ul.img li h3 {
-            font-size: 2rem;
-            }
-            section.borboleta ul.img li {
-                display: flex;
-                text-align: center;
-                padding-left: 0vw;
-                margin: 5vw 0vw 5vw;
-                display: none;
-               font-weight: bold;
-            }
-            section.borboleta div ul {
-                text-align: center;
-            }
-            section.peito ul.img li img {
-                width: 30%;
-                display: none;
-                }
-                section.peito ul.img li h3 {
-                font-size: 2rem;
-                }
-                section.peito ul.img li {
-                    display: flex;
-                    text-align: center;
-                    padding-left: 0vw;
-                    margin: 5vw 0vw 5vw;
-                    display: none;
-                   font-weight: bold;
-                }
-                section.peito div ul {
-                    text-align: center;
-                }
-                section.costas ul.img li img {
-                    width: 30%;
-                    display: none;
-                    }
-                    section.costas ul.img li h3 {
-                    font-size: 2rem;
-                    }
-                    section.costas ul.img li {
-                        display: flex;
-                        text-align: center;
-                        padding-left: 0vw;
-                        margin: 5vw 0vw 5vw;
-                        display: none;
-                       font-weight: bold;
-                    }
-                    section.costas div ul {
-                        text-align: center;
-                    }
-}
+
 
