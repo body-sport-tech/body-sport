@@ -414,8 +414,14 @@ section.meio div ul li.img p {
     border-radius: 8px;
     margin: 2vw 2vw;
     padding: 2vw 3vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.adicionais div ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
 
 .alimentacao {
     margin: 50px auto;
@@ -426,15 +432,20 @@ section.meio div ul li.img p {
 
 .alimentacao div ul {
     background: #D3E6D3;
+    padding: 1vh 0 1vh;
+
 }
 
 
 .alimentacao h2 {
     color: #02210C;
     font-size: 2rem;
-    text-align: center;
     font-weight: bold;
     background-color: #C1D9C3;
+    display: inline-block;
+    padding: 0.5vw 3vw;
+    margin: 2vw 0 3vw;
+    border-radius: 10px;
 }
 
 
@@ -442,20 +453,19 @@ section.meio div ul li.img p {
     color: #02210C;
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 2vw 3vw 0vw;
-
-
+    padding: 2vw 3vw 0;
+    margin: 1vw;
 }
 
 
 .alimentacao div ul li p {
     text-align: left;
-    padding: 20px 4vw;
+    padding: 7px 2vw 7px;
+    line-height: 20px;
     color: #5c5c5c;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
-
 
 .alimentacao div ul {
     margin: 8vw 20vw;
@@ -469,6 +479,13 @@ section.meio div ul li.img p {
     border-radius: 20px;
 }
 
+.alimentacao div ul li ul li p:before {
+    content: "•";
+    color: #000;
+    margin-right: 5px;
+    display: inline;
+}
+
 
 .sobre {
     margin: 4vw 8vw;
@@ -476,10 +493,10 @@ section.meio div ul li.img p {
 
 
 .sobre h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #02210C;
     text-align: center;
-    margin: 50px 20px;
+    margin: 6vw 10vw 4vw 10vw;
 }
 
 
@@ -510,6 +527,23 @@ section.meio div ul li.img p {
     display: block;
 }
 
+.img {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.img div {
+    width: 100%;
+}
+
+.img div p img {
+    width: 400px;
+    display: inline-block;
+    margin-right: -13vw;
+    margin-bottom: -3.8vw;
+}
 
 footer {
     background-color: #D3E6D3;
@@ -577,4 +611,78 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+
+@media (max-width: 768px) {
+
+    section.topo h1 {
+        font-size: 2.4rem;
+    }
+
+    section.meio h2 {
+        font-size: 1.6rem;
+        margin: 15vw 10vw 8vw;
+    }
+
+    section.meio p {
+        font-size: 1.1rem;
+        text-align: center;
+        text-indent: 20px;
+        margin: 0 8vh;
+    }
+
+    section.meio div ul li.img img {
+        width: auto;
+        display: block;
+    }
+
+    .meio div ul li.img h2 {
+        font-size: 1.4rem;
+    }
+
+    .meio div ul .img p {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+     footer div.conteiner div.redes h4 {
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.redes p {
+        font-size: 0.9rem;
+        padding-right: 30px;
+    }
+
+    footer div.conteiner div.redes nav p {
+        font-size: 1.4rem;
+        padding: 9px 5px;
+    }
+
+    footer div.conteiner div.redes nav p a {
+        padding-right: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li h4 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer div.conteiner div.esporte nav ul li {
+        color: #4e4e4e;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    footer div.contato {
+        text-align: center;
+    }
+
+    footer div.contato {
+        color: #6d6d6d;
+        font-size: 0.8rem;
+        line-height: 22px;
+    }
 }
