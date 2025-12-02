@@ -101,7 +101,7 @@ body.ativo {
 .topo {
   padding: 30vw 50vw 4vw 5vw;
   background-size: cover;
-  background-position: top; 
+  background-position: top;
   width: auto;
   font-family: "Hammersmith One", sans-serif;
   text-align: center;
@@ -109,9 +109,9 @@ body.ativo {
   background-image: linear-gradient(
       to bottom,
       rgba(252, 252, 252, 1),
-      transparent 20%),
+      transparent 20%
+    ),
     url("../imagem/image96.png");
-
 }
 
 .topo h1 {
@@ -152,12 +152,12 @@ body.ativo {
   border-radius: 30px;
   padding: 1vw;
   text-align: center;
-  margin: 3vw 10vw;
+  margin: 3vw 20vw;
 }
 
 .icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: #abd0b5;
   border-radius: 50%;
   display: flex;
@@ -167,7 +167,7 @@ body.ativo {
 }
 
 .icon img {
-  width: 40px;
+  width: 3.5vw;
 }
 
 .praticar h3 {
@@ -205,12 +205,16 @@ body.ativo {
   border-radius: 30px;
   padding: 20px;
   text-align: center;
-  margin: 3vw 14vw;
+  margin: 3vw 20vw;
+}
+
+.cartoes p {
+  font-size: 1.2rem;
 }
 
 .icone {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background-color: #abd0b5;
   border-radius: 50%;
   display: flex;
@@ -219,9 +223,6 @@ body.ativo {
   margin: 2vw 4vw 15px 6vw;
 }
 
-.icone img {
-  width: 70px;
-}
 .cima {
   display: flex;
   align-items: center;
@@ -266,17 +267,6 @@ body.ativo {
   font-weight: bold;
   font-size: 2rem;
 }
-.fundamental div {
-    
-}
-.fundamental div img {
-    
-}
-
-.fundamental div ul.text {
-   
-}
-
 
 .fundamental div ul.text p {
   font-size: 1.3rem;
@@ -446,12 +436,88 @@ footer div.contato {
   line-height: 22px;
 }
 
-@media (max-width: 600px) {
+.fundamental h2 {
+  font-size: 1.55rem;
+  margin: 10vw 0 7vw 0;
+}
 
+.fundamental {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.fundamental h2 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.fundamental > div {
+  background-color: #e6f0e6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 25px;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.fundamental > div img {
+  flex: 1;
+  min-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.fundamental > div > ul {
+  flex: 1;
+  min-width: 300px;
+  gap: 20px;
+  background-color: #e6f0e6;
+  border-radius: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 25px;
+}
+
+.fundamental > div > ul > li {
+  flex: 1;
+}
+
+.fundamental > div > ul > li h3 {
+  font-size: 1.25em;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.fundamental > div > ul > li p {
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+main section ul.cartoes li div.cima {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exercicio .cartao ul.cartoes li div.text p {
+  margin: 0;
+}
+
+.icone img {
+  width: 4vw;
+}
+
+@media (max-width: 768px) {
   .topo {
     background-size: cover;
   }
-  
+
   .topo h1 {
     font-size: 2rem;
   }
@@ -469,15 +535,14 @@ footer div.contato {
     margin: 4vw 0;
   }
 
-
-.cards {
-    margin: 3vw 2vw;   
-    padding: 4vw;      
+  .cards {
+    margin: 3vw 2vw;
+    padding: 4vw;
     border-radius: 20px;
   }
 
   .card {
-    margin: 0;         
+    margin: 0;
     padding: 0;
   }
 
@@ -486,32 +551,31 @@ footer div.contato {
   }
 
   .praticar p.sub {
-    margin: 2vw 4vw;  
+    margin: 2vw 4vw;
   }
-}
 
   .praticar div.card p {
     line-height: 1.1;
     text-align: justify;
   }
 
-    .cartoes li {
-    margin: 4vw 2vw;     
-    padding: 6vw 4vw;   
-    border-radius: 25px; 
+  .cartoes li {
+    margin: 4vw 2vw;
+    padding: 6vw 4vw;
+    border-radius: 25px;
   }
 
   .cima {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
   .icone {
-    margin: 4vw auto;   
+    margin: 4vw auto;
   }
 
   .cima .text {
-    text-align: center; 
+    text-align: center;
     padding: 0;
   }
 
@@ -521,215 +585,152 @@ footer div.contato {
   }
 
   .icone {
-    width: 90px;  
+    width: 90px;
     height: 90px;
     margin: 3vw auto;
   }
 
   .icone img {
-    width: 35px;     
+    width: 35px;
   }
 
- .cima .text {
-
-    text-align: left; 
+  .cima .text {
+    text-align: left;
     padding: 0;
   }
-  
+
   .exercicio .cartao ul.cartoes li div.text p {
-    padding: 2px 0 2px 5vw; 
-    text-align: left; 
+    padding: 2px 0 2px 5vw;
+    text-align: left;
     margin: 0 25vw 0 0;
   }
 
   .dicas ul li p {
-  font-size: 1.1rem;
-  text-align: left; 
-  color: rgba(0, 0, 0, 0.7);
-  padding: 5px 20px;
-}
+    font-size: 1.1rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 5px 20px;
+  }
 
-.dicas {
-  margin: 4vw; 
-  text-align: left; 
-}
+  .dicas {
+    margin: 4vw;
+    text-align: left;
+  }
 
-.dicas h2{
-  text-align: center;
-  margin: 1.5rem 0 1.2rem 0 ;
-  font-size: 1.6rem;
-}
-
-.dicas h3{
-  text-align: center;
-}
-.fundamental h2{
-font-size: 1.55rem;
-margin: 10vw 0 7vw 0;
-}
-
-
-.fundamental {
-    width: 100%;
-    max-width: 900px; 
-    margin: 0 auto;
-}
-
-.fundamental h2 {
+  .dicas h2 {
     text-align: center;
-    font-size: 2.2em;
-    color: #333;
-    margin-bottom: 25px;
-}
+    margin: 1.5rem 0 1.2rem 0;
+    font-size: 1.6rem;
+  }
 
-.fundamental > div {
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: stretch;
-    margin-bottom: 25px;
-    gap: 20px; 
-}
+  .dicas h3 {
+    text-align: center;
+  }
 
-.fundamental > div img {
-    flex: 1; 
-    min-width: 300px; 
-    height: auto;
-    object-fit: cover; 
-    border-radius: 10px; 
-}
+  section.alimentacao h2 {
+    font-size: 1.4rem;
+    margin: 6vw 20vw 2vw 20vw;
+  }
+  section.alimentacao ul {
+    text-align: center;
+    margin: 4vw 10vw;
+    padding: 3vw 7vw;
+  }
+  section.alimentacao ul li p {
+    font-size: 1rem;
+  }
+  section.alimentacao ul li p span {
+    font-size: 1rem;
+  }
+  section.alimentacao ul li h3 {
+    font-size: 1.1rem;
+  }
+  section.sobre h2 {
+    font-size: 1.3rem;
+    margin: 6vw 8vw;
+    font-weight: 500;
+  }
 
-.fundamental > div > ul {
-    flex: 1; 
-    min-width: 300px;
-    display: flex; 
-    gap: 20px; 
-    background-color: #e6f0e6;
-    border-radius: 15px; 
-    list-style: none;
-    margin: 0;
-    padding: 25px;
-}
-
-    .fundamental > div > ul > li {
-        flex: 1; 
-    }
-
-    .fundamental > div > ul > li h3 {
-        font-size: 1.25em;
-        color: #222;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-
-    .fundamental > div > ul > li p {
-        margin: 0 0 10px 0;
-        line-height: 1.5;
-        color: #333;
-    }
-
-
-
-    section.alimentacao h2 {
-        font-size: 1.4rem;
-        margin: 6vw 20vw 2vw 20vw;
-        }
-    section.alimentacao ul {
-        text-align: center;
-        margin: 4vw 10vw;
-        padding: 3vw 7vw;
-    }
-    section.alimentacao ul li p {
-        font-size: 1rem;
-        }
-         section.alimentacao ul li p span {
-        font-size: 1rem;
-        }
-    section.alimentacao ul li h3 {
-        font-size: 1.1rem;
-    }
- section.sobre h2 {
-        font-size: 1.3rem;
-        margin: 6vw 8vw;
-        font-weight: 500;
-        }
-
-  .profissional h2{
+  .profissional h2 {
     font-size: 1.8rem;
     font-weight: 500;
   }
-   .profissional p{
-     font-size: 1.2rem;
-     padding: 0 10vw;
-   }
-   .img div{
+  .profissional p {
+    font-size: 1.2rem;
+    padding: 0 10vw;
+  }
+  .img div {
     text-align: right;
-   }
-   .img div.img {
+  }
+  .img div.img {
     width: 20%;
     padding: 0;
     margin: 0;
-   }
-   section.img {
-  margin: 0;
-  padding: 0;
-}
+  }
+  section.img {
+    margin: 0;
+    padding: 0;
+  }
 
-section.img div {
-  text-align: right;
-  line-height: 0; 
-}
+  section.img div {
+    text-align: right;
+    line-height: 0;
+  }
 
-section.img div img {
-  width: 25%; 
-  height: auto; 
-  margin: 0;
-  
-  vertical-align: bottom; 
-}
-section.img div img {
-    width: 35%; 
+  section.img div img {
+    width: 25%;
+    height: auto;
+    margin: 0;
+
+    vertical-align: bottom;
+  }
+  section.img div img {
+    width: 35%;
     vertical-align: bottom;
   }
 
-    footer div.conteiner div.redes h4 {
-        font-size: 1.2rem;
-        padding-bottom: 15px;
-    }
+  footer div.conteiner div.redes h4 {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
 
-    footer div.conteiner div.redes p {
-        font-size: 0.9rem;
-        padding-right: 30px;
-    }
+  footer div.conteiner div.redes p {
+    font-size: 0.9rem;
+    padding-right: 30px;
+  }
 
-    footer div.conteiner div.redes nav p {
-        font-size: 1.4rem;
-        padding: 9px 5px;
-    }
+  footer div.conteiner div.redes nav p {
+    font-size: 1.4rem;
+    padding: 9px 5px;
+  }
 
-    footer div.conteiner div.redes nav p a {
-        padding-right: 15px;
-    }
+  footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+  }
 
-    footer div.conteiner div.esporte nav ul li h4 {
-        font-weight: bold;
-        font-size: 1.2rem;
-        padding-bottom: 15px;
-    }
+  footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
 
-    footer div.conteiner div.esporte nav ul li {
-        color: #4e4e4e;
-        font-size: 1rem;
-        line-height: 25px;
-    }
+  footer div.conteiner div.esporte nav ul li {
+    color: #4e4e4e;
+    font-size: 1rem;
+    line-height: 25px;
+  }
 
-    footer div.contato {
-        text-align: center;
-    }
+  footer div.contato {
+    text-align: center;
+  }
 
-    footer div.contato {
-        color: #6d6d6d;
-        font-size: 0.8rem;
-        line-height: 22px;
-    }
+  footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+  }
 
-
+  .cartoes p {
+    font-size: 1rem;
+  }
+}
