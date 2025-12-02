@@ -462,12 +462,13 @@ footer div.contato {
   margin-bottom: 25px;
   gap: 20px;
   border-radius: 20px;
+  margin: 5vw 5vw;
 }
 
 .fundamental > div img {
   flex: 1;
   min-width: 300px;
-  height: auto;
+  max-height: 600px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -481,6 +482,15 @@ footer div.contato {
   list-style: none;
   margin: 0;
   padding: 25px;
+}
+
+.fundamental p {
+  font-size: 1.2rem;
+}
+
+.fundamental h3 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .fundamental > div > ul > li {
@@ -499,21 +509,20 @@ footer div.contato {
   line-height: 1.5;
   color: #333;
 }
+.icone img {
+  width: 4vw;
+}
 
 main section ul.cartoes li div.cima {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.exercicio .cartao ul.cartoes li div.text p {
-  margin: 0;
-}
-
-.icone img {
-  width: 4vw;
-}
-
 @media (max-width: 768px) {
+  .icon img {
+    width: 15vw;
+  }
+
   .topo {
     background-size: cover;
   }
@@ -733,4 +742,13 @@ main section ul.cartoes li div.cima {
   .cartoes p {
     font-size: 1rem;
   }
+
+  main section ul.cartoes li div.cima {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.exercicio .cartao ul.cartoes li div.text p {
+  margin: 0;
 }
