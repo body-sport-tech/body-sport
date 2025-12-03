@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light only">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/questionario05.css">
@@ -86,15 +87,14 @@
        Olá! <span>Fulano</span>
     </h1>
     <p>
-        Obrigado por nos responder! <br>
-        Vimos que gostaria de praticar:
+        Obrigado por nos responder! 
     </p>
    
-   
-  
-    <div id="lista-esportes">
+    <p id="funcionou">
 
-    </div>
+    </p>
+  
+ 
 
   </section>
   </main>
@@ -176,8 +176,8 @@
     </footer>
 
 </body>
- 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="quest.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
 
@@ -197,7 +197,7 @@
     try {
       const esportes = JSON.parse(esportesRaw);
       if (!Array.isArray(esportes) || esportes.length === 0) {
-        area.textContent = "Nenhum esporte selecionado.";
+        area.textContent = "Nenhum esporte  selecionado.";
       } else {
         area.innerHTML = esportes.map(e => `<span>${e}</span>`).join(", ");
       }
@@ -206,5 +206,36 @@
       area.textContent = "Erro ao carregar esportes";
     }
   });
+  //parte da frequencia
+  const freqTexto = document.getElementById("freq-texto");
+const frequencia = localStorage.getItem("frequencia");
+const  funcionou = document.getElementById("funcionou")
+
+if (freqTexto) {
+    if (frequencia) {
+        freqTexto.textContent = frequencia;
+    } 
+}
+    let mensagem = "";
+
+    if(frequencia === "4 a 7 vezes por semana"){
+        mensagem = "Vimos que você pratica esportes de 4 a 7 vezes por semana, parabéns! Continue assim"
+    }
+    else if(frequencia === "1 a 3 dias por semana"){
+        mensagem = "Vimos que você pratica esportes de 1 a 3 vezes por semana, você está no caminho certo, continue assim"
+    }
+    else{
+        mensagem = "Vimos que você seleciou que nunca pratica esportes, tudo bem ainda dá tempo de continuar"
+    }
+
+
+funcionou.textContent = mensagem
+
+
 </script>
+    
+</body>
+ 
+
+
 </html>

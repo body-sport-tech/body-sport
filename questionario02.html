@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light only">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionário</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -92,7 +93,7 @@
  <form action="questionario03.html" id="form-esportes">
         <fieldset class="grupo">
            
-          <input type="checkbox" id="capoeira" name="esporte" value="Capoeira" >
+          <input type="checkbox" id="capoeira" name="esporte" value="Capoeira"  >
           <label for="capoeira">Capoeira</label>
 
            <input type="checkbox" id="natacao" name="esporte" value="Natação">
@@ -113,7 +114,7 @@
            <input type="checkbox" id="futebol" name="esporte" value="Futebol">
           <label for="futebol">Futebol</label>
            
-            <button id="botaoEnviar" type="submit">
+            <button id="botaoEnviar" onclick="pegarValores()">
                 Concluído</button>
             
          
@@ -209,6 +210,7 @@
 <script src="quest.js" defer></script>
 
 
-    
+ <script src="script.js"></script>
+<script src="quest.js" defer></script>   
 </body>
 </html>
