@@ -47,7 +47,7 @@ body.ativo {
 .menu-lateral ul li a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -399,7 +399,7 @@ footer div.contato {
         margin-left: 260px;
     }
     .menu-lateral ul li a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .menu-lateral {
     left: -260px;
