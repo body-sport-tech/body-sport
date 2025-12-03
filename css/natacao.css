@@ -30,7 +30,7 @@
 }
 
 .topo h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #ecf1ee;
     margin: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -133,13 +133,12 @@ body.ativo {
     left: 320px;
 }
 
-
 section.meio h2 {
     color: #013612;
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
-    margin: 3rem;
+    margin: 3rem 0 2rem 0;
 }
 
 
@@ -197,7 +196,6 @@ section.meio div ul li.img img {
 section.meio div ul li.img p {
     margin: 0 0 10px 0;
 }
-
 
 .meio ul {
     width: 100%;
@@ -305,11 +303,7 @@ section.meio div ul li.img p {
     content: "•";
     color: #000;
     display: inline;
-
-
 }
-
-
 
 
 .treinamento>h3,
@@ -359,17 +353,12 @@ section.meio div ul li.img p {
     border-radius: 15px;
 }
 
-
 .treinamento div img,
 .fortalecimento div img {
     padding: 20px;
     width: 500px;
     border-radius: 30px;
 }
-
-
-
-
 
 
 
@@ -385,8 +374,6 @@ section.meio div ul li.img p {
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
     padding: 3vw 2vw;
-
-
 }
 
 .adicionais {
@@ -577,4 +564,74 @@ footer div.contato {
     color: #6d6d6d;
     font-size: 0.8rem;
     line-height: 22px;
+}
+
+@media (max-width: 768px) {
+
+    .topo {
+        background-size: cover;
+    }
+
+    .topo h1 {
+        font-size: 2.5rem;
+    }
+
+    section.meio h2 {
+        font-size: 1.5rem;
+    }
+
+    section.meio p {
+        margin: 2vw 2vw;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+
+    .meio ul li.img p img {
+        width: 100px;
+    }
+
+    .meio ul li.img h2 {
+        font-size: 1rem;
+        
+    }
+
+    .meio ul li.img p {
+        font-size: 0.7rem;
+        line-height: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nado,
+    .borboleta,
+    .peito,
+    .costas {
+        background-color: #D3E6D3;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4vh 7vw;
+        padding: 3vw;
+        border-radius: 50px;
+    }
+
+    .treinamento h3 {
+        font-size: 1.3rem;
+    }
+
+    .treinamento div img {
+        height: 330px;
+        width: 450px;
+    }
+
+    .fortalecimento div img {
+        height: 330px;
+        width: 450px;
+    }
+
+    .adicionais div ul{
+        display: block;
+    }
+    
 }

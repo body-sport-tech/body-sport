@@ -222,6 +222,14 @@ transition: all 0.3s ease;
     font-weight: 300;
     
 }
+#fome{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+#alimento{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
 .primeira{
     font-size: 1.6rem
 }
