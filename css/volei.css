@@ -302,55 +302,91 @@ footer div.contato {
     line-height: 22px;
 }
 @media (max-width: 600px) {
+    body.ativo {
+        margin-left: 260px;
+    }
+    .menu-lateral ul li a {
+        font-size: 1.1rem;
+    }
+    .menu-lateral {
+    left: -260px;
+    width: 260px;
+    height: 100%;
+}
+.menu-lateral ul {
+    margin-top: 30px;
+}
+.toggle.ativo {
+    left: 280px;
+}
+.topo h1 {
+    font-size: 4rem;
+}
+section.meio p {
+    margin: 5vw;
+    font-size: 1.5rem;
+    
+}
+section.meio h2 {
+    font-size: 1.8rem;
+    margin: 5vw;
+}
+section.meio div {
+    margin: 5vw;
+    padding: 0;
+}
+section.meio div ul h2 { 
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+.meio div ul li.img img {
+    width: 50px;
+}
+
+.meio div ul li.img p{
+    font-size: 1.5rem;
+}
 
     section.exercicios div ul {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-         margin: 1vw;
+        display: block;
+        margin: 5vw;
     }
+    
      section.exercicios div ul.lista2{
-        display: grid;
-         grid-template-columns: repeat(1, 1fr);
-         margin: 1vw;
+        display: block;
+        margin: 5vw;
      }
-     section.exercicios div ul li {
-        margin: 1vw 3vw 1vw 3vw ;
+     section.exercicios div ul.lista2 p {
+        font-size: 1.4rem;
      }
-
+     
     .exercicios div ul li h3 {
-        font-size: 1.5rem;
-        margin: 6vw 0;
+        font-size: 1.6rem;
     }
 
-    .exercicios p {
-        font-size: 1rem;
-        margin: 4vw 0;
-        text-align: justify;
-        text-indent: 20px; 
+    section.exercicios div ul li p  {
+        font-size: 1.4rem;
     }
-
+    section.treinos div ul li {
+        margin: 5vw;
+    }
+    section.treinos div ul li p {
+        font-size: 1.4rem;
+    }
     .alimentacao h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin: 3vw 2vw 1vw ;
-    padding: 5px 5px;
+    margin: 5vw;
+    padding: 5px;
 }
 
 .alimentacao ul li p{
-     font-size: 0.7rem;
-    margin: 1px ;
+     font-size: 1.4rem;
+    margin: 5vw;
      padding: 5px 5px;
 }
 
-    .menu-lateral {
-        width: 250px;
-        left: -250px;
-      
-    }
-    section.meio p {
-    margin: 2vw  15vw 2vw 15vw;
-    font-size: 0.7rem;
-}
 .sobre h2 {
     font-size: 1.6rem;
 }
@@ -365,16 +401,48 @@ margin:0 20px;
     .topo{
         background-size: cover;
     }
-    section.treinos div ul li{
-        margin: 6vw 4vw 7vw 0vw;
-    }
-    section.meio div ul h2{
-        font-size: 1.4rem;
-    }
-    section.meio div ul li.img{
-        padding: 0;
-    }
-    section.img div img{
-        width: 2%;
-    }
+    .sobre {
+    margin: 5vw;
+}
+.sobre h2 {
+    font-size: 1.4rem;
+    margin: 5vw;
+    font-weight: 600;
+}
+
+footer div.conteiner div.redes h4 {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.redes p {
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+footer div.conteiner div.redes nav p {
+    font-size: 1.4rem;
+    padding: 9px 5px;
+}
+footer div.conteiner div.redes nav p a {
+    padding-right: 15px;
+}
+
+footer div.conteiner div.esporte nav ul li h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer div.conteiner div.esporte nav ul li{
+    color: #4e4e4e;
+    font-size: 1rem;
+    line-height: 25px;
+}
+footer div.contato {
+    text-align: center;
+}
+footer div.contato {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+
 }
